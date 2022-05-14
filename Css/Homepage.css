@@ -1,0 +1,36 @@
+#Title_Nav{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 6%;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.Title_Nav_Inner{
+    width: inherit;
+    height: 100%;
+    display: flex;
+}
+
+.Title_Nav_Inner_Content{
+    width: 46%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.Title_Img{
+    height: 80%;
+    width: auto;
+    margin-left: 2%;
+}
+.Title_Content{
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
