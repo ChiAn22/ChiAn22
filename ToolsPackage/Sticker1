@@ -1,0 +1,137 @@
+// 四级地区AutoSticker
+function AutoSticker(a1){
+    var text1=window.prompt('注册名','C4_');
+    var text2=window.prompt('标题','');
+    var text3=window.prompt('缩放级别(四级地区建议3.8-3.6)','');
+    var text="var "+text1+"= {\n" +
+        "    title:'"+text2+"',\n" +
+        "    fontSize:'10px',\n" +
+        "    fontWeight:'bold',\n" +
+        "    contentColor:'#909090',\n" +
+        "    outlineColor:'#ffffff',\n" +
+        "    location:["+a1+"],\n" +
+        "    minZoom:"+text3+",\n" +
+        "    content: Content,\n" +
+        "}\n"+
+        text1+".content("+text1+");";
+    saveFile(text);
+}
+
+
+//Point AutoSticker
+
+function AutoSticker(a1){
+    var text1=window.prompt('注册名','Point_');
+    var text2=window.prompt('标题','');
+    var text3Title=window.prompt('Point类型(留空默认项)','');
+    var text4=window.prompt('缩放级别(Point建议范围4.6-5.6)','');
+
+    var text3Color;
+    text3Color=colorSelect(text3Title);
+
+    var textContent="var "+text1+"= {\n" +
+        "    title:'"+text2+"',\n" +
+        "    fontSize:'10px',\n" +
+        "    fontWeight:'bold',\n" +
+        "    contentColor:'"+text3Color+"',\n" +
+        "    outlineColor:'#ffffff',\n" +
+        "    location:["+a1+"],\n" +
+        "    minZoom:"+text4+",\n" +
+        "    pointContent: PointContent,\n" +
+        "    pointSize:4,\n" +
+        "}\n"+
+        text1+".pointContent("+text1+");\n\n";
+
+    afterText=afterText+textContent;
+    afterTextContent+=1;
+
+    if(window.confirm('要立即导出内容吗？'+'[当前剪贴板有'+afterTextContent+'项内容]')){
+        saveFile(afterText);
+    }
+}
+
+
+
+//Subway - Metro AutoSticker
+
+function AutoSticker(a1){
+    var text1=window.prompt('注册名(Metro模式下，仅需分配二位编号即可)','');
+    var text2=window.prompt('标题','');
+    var text3Title=window.prompt('Point类型(留空默认项)','');
+    var text4=window.prompt('缩放级别(Point建议范围4.6-5.6)','');
+
+    var text3Color;
+    text3Color=colorSelect(text3Title);
+
+    //Metro AutoSticker
+    var textContent="var Metro_C2_0"+text1+"= {\n" +
+        "    title:'"+text2+"',\n" +
+        "    fontSize:'12px',\n" +
+        "    fontWeight:'bold',\n" +
+        "    contentColor:'#6b6b6b',\n" +
+        "    outlineColor:'#ffffff',\n" +
+        "    location:["+a1+"],\n" +
+        "    minZoom:4.8,\n" +
+        "    icoSrc:Mainpackage_Icon.Metro,\n" +
+        "    icoContent: IcoContent,\n" +
+        "}\n" +
+        "Metro_C2_0"+text1+".icoContent(Metro_C2_0"+text1+");";
+
+    afterText=afterText+textContent;
+    afterTextContent+=1;
+
+
+//Point 20220515
+
+    function AutoSticker(a1){
+        var text1=window.prompt('注册名','Point_');
+        var text2=window.prompt('标题','');
+        var text3Title=window.prompt('Point类型(留空默认项)','');
+        var text4=window.prompt('缩放级别(Point建议范围4.6-5.6)','');
+
+        var text3Color;
+        text3Color=colorSelect(text3Title);
+
+        var textContent="var "+text1+"= {\n" +
+            "    title:'"+text2+"',\n" +
+            "    fontSize:'10px',\n" +
+            "    fontWeight:'bold',\n" +
+            "    contentColor:'"+text3Color+"',\n" +
+            "    outlineColor:'#ffffff',\n" +
+            "    location:["+a1+"],\n" +
+            "    minZoom:"+text4+",\n" +
+            "    pointContent: PointContent,\n" +
+            "    pointSize:4,\n" +
+            "}\n"+
+            text1+".pointContent("+text1+");\n\n";
+
+        afterText=afterText+textContent;
+        afterTextContent+=1;
+
+        if(window.confirm('要立即导出内容吗？'+'[当前剪贴板有'+afterTextContent+'项内容]')){
+            saveFile(afterText);
+
+//Level3 20220518
+
+function AutoSticker(a1){
+    var text1=window.prompt('注册名','C4_');
+    var text2=window.prompt('标题','');
+    var text3=window.prompt('缩放级别(四级地区建议3.8-3.6)','');
+    var textContent="var "+text1+"= {\n" +
+        "    title:'"+text2+"',\n" +
+        "    fontSize:'10px',\n" +
+        "    fontWeight:'bold',\n" +
+        "    contentColor:'#909090',\n" +
+        "    outlineColor:'#ffffff',\n" +
+        "    location:["+a1+"],\n" +
+        "    minZoom:"+text3+",\n" +
+        "    content: Content,\n" +
+        "}\n"+
+        text1+".content("+text1+");\n";
+
+    afterText=afterText+textContent;
+    afterTextContent+=1;
+
+    if(window.confirm('要立即导出内容吗？'+'[当前剪贴板有'+afterTextContent+'项内容]')){
+        saveFile(afterText);
+    }
