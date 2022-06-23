@@ -1979,6 +1979,462 @@ var Point_TakasakiServices= {
 }
 Point_TakasakiServices.pointContent(Point_TakasakiServices);
 
+var Point_EcologicalUniversityOfCapital= {
+    title:'首都生态大学',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6695cf',
+    outlineColor:'#ffffff',
+    location:[264.88157065411275,102.06221517268546],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_EcologicalUniversityOfCapital.pointContent(Point_EcologicalUniversityOfCapital);
+
+var Point_BusinessUniversityOfCapital= {
+    title:'首都商贸学院',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6695cf',
+    outlineColor:'#ffffff',
+    location:[244.43391112666916,116.65342434532994],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BusinessUniversityOfCapital.pointContent(Point_BusinessUniversityOfCapital);
+
+var Point_ShidaiUniversityOfCapital= {
+    title:'首都时代大学',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6695cf',
+    outlineColor:'#ffffff',
+    location:[249.59189021622845,122.95762203314763],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ShidaiUniversityOfCapital.pointContent(Point_ShidaiUniversityOfCapital);
+
+var Point_RoRyongClearskyLibrary= {
+    title:'落绒晴空书厅',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[163.34731205402537,116.72064219985887],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_RoRyongClearskyLibrary.pointContent(Point_RoRyongClearskyLibrary);
+
+var Point_BuildingKanyuan= {
+    title:'瞰远大厦',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[157.84960496915892,140.2813953910016],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BuildingKanyuan.pointContent(Point_BuildingKanyuan);
+
+var Point_ChisanTemple_01= {
+    title:'大芝寺',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[284.7098131900836,182.17336842238151],
+    minZoom:4.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ChisanTemple_01.pointContent(Point_ChisanTemple_01);
+
+var Point_ChisanTemple_Diexiezhijing= {
+    title:'叠榭之景',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[286.5460427062238,180.4821046207317],
+    minZoom:6.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ChisanTemple_Diexiezhijing.pointContent(Point_ChisanTemple_Diexiezhijing);
+
+var Point_ChiJiangCityPark_01= {
+    title:'大芝江滨国家绿地\n湿地博物馆',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[343.2591337383636,118.55219864951792],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ChiJiangCityPark_01.pointContent(Point_ChiJiangCityPark_01);
+
+var Point_ChiJiangCityPark_02= {
+    title:'风埗',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[344.2464745873609,114.75243563752043],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ChiJiangCityPark_02.pointContent(Point_ChiJiangCityPark_02);
+
+var Point_ChiJiangCityPark_03= {
+    title:'芝山之眼\n摩天轮设施',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[347.5675266425918,110.95267262552295],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ChiJiangCityPark_03.pointContent(Point_ChiJiangCityPark_03);
+
+var Point_EastWuyinSquare= {
+    title:'东戊寅广场',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[340.3569547689708,125.31398078450488],
+    minZoom:5.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_EastWuyinSquare.pointContent(Point_EastWuyinSquare);
+
+var Point_YushuiWetlandPark= {
+    title:'榆水湿地公园',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[212.92637144001608,143.0825332328395],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_YushuiWetlandPark.pointContent(Point_YushuiWetlandPark);
+
+var Point_BingoBotanicalGarden= {
+    title:'滨谷植物园',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[183.56444021773666,144.50090583842982],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BingoBotanicalGarden.pointContent(Point_BingoBotanicalGarden);
+
+var Point_Tintown_BaishiriRong= {
+    title:'百十里弄',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[267.060321340526,150.02560420743134],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Tintown_BaishiriRong.pointContent(Point_Tintown_BaishiriRong);
+
+var Point_Tintown_Kuoxiaxishui= {
+    title:'阔下溪水',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[261.5708622601272,150.17821008515742],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Tintown_Kuoxiaxishui.pointContent(Point_Tintown_Kuoxiaxishui);
+
+var Point_Tintown_Hurilou= {
+    title:'槲栎楼',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[260.7433457850103,146.40473571623843],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Tintown_Hurilou.pointContent(Point_Tintown_Hurilou);
+
+var Point_Tintown_Lianyuan= {
+    title:'楝园',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[260.0482324509881,148.1259689743296],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Tintown_Lianyuan.pointContent(Point_Tintown_Lianyuan);
+
+var Point_DatinFishingBoat= {
+    title:'大汀渔船公司',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[416.82654604370833,69.90077212822119],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_DatinFishingBoat.pointContent(Point_DatinFishingBoat);
+
+var Point_DayangRoadstead= {
+    title:'大洋驳区',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[486.0936875074102,46.20776082065315],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_DayangRoadstead.pointContent(Point_DayangRoadstead);
+
+var Point_ShenshuiPort= {
+    title:'深水埠头',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[495.9368709614876,51.525722664104066],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ShenshuiPort.pointContent(Point_ShenshuiPort);
+
+var Point_JiuzhouPu_Pugon= {
+    title:'苑宫',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[406.7066275566749,67.09489450386648],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_JiuzhouPu_Pugon.pointContent(Point_JiuzhouPu_Pugon);
+
+var Point_JiuzhouPu_GrassGround= {
+    title:'九洲堡公园',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[412.6897526345099,66.31930358983152],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_JiuzhouPu_GrassGround.pointContent(Point_JiuzhouPu_GrassGround);
+
+var Point_JiuzhouPu_SOHO= {
+    title:'九洲堡SOHO',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[416.7523672801278,77.87928932229829],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_JiuzhouPu_SOHO.pointContent(Point_JiuzhouPu_SOHO);
+
+var Point_Ginri_HarbourHotel= {
+    title:'港湾码头酒店',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[413.76080615008715,81.0555154588509],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Ginri_HarbourHotel.pointContent(Point_Ginri_HarbourHotel);
+
+var Point_JadeGarden= {
+    title:'翡翠园',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[422.287504842594,158.11761337661804],
+    minZoom:4.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_JadeGarden.pointContent(Point_JadeGarden);
+
+var Point_CWL= {
+    title:'首都文联',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[419.84832835538253,165.2937480550903],
+    minZoom:4.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_CWL.pointContent(Point_CWL);
+
+var Point_JadeGarden_Hall_Ru= {
+    title:'麓馆文学殿堂',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[419.84832835538253,160.62749366083932],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_JadeGarden_Hall_Ru.pointContent(Point_JadeGarden_Hall_Ru);
+
+var Point_JadeGarden_Hall_Ru_Meetingroom= {
+    title:'麓馆会议中心',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[416.77284061977514,162.71316734513752],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_JadeGarden_Hall_Ru_Meetingroom.pointContent(Point_JadeGarden_Hall_Ru_Meetingroom);
+
+var Point_CMAC_RedCarpet= {
+    title:'红毯',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[352.0287324475209,91.0750682338923],
+    minZoom:5.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_CMAC_RedCarpet.pointContent(Point_CMAC_RedCarpet);
+
+var Point_CMAC_TAGA_ArtisticAwards= {
+    title:'大港藝赏媒体工作部',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[351.7197556877702,84.14762100580823],
+    minZoom:5.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_CMAC_TAGA_ArtisticAwards.pointContent(Point_CMAC_TAGA_ArtisticAwards);
+
+var Point_CMAC_KeplerHotel= {
+    title:'开普勒酒店',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[346.435304922188,99.03853586258481],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_CMAC_KeplerHotel.pointContent(Point_CMAC_KeplerHotel);
+
+var Point_Fodaoci= {
+    title:'佛道祠',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[416.88932535870197,181.18281560833196],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Fodaoci.pointContent(Point_Fodaoci);
+
+var Point_DarkTeaTemple= {
+    title:'黑茶寺',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[459.9555642819798,98.72506556182557],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_DarkTeaTemple.pointContent(Point_DarkTeaTemple);
+
+var Point_YuhaiTemple= {
+    title:'毓海寺',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[506.9127380158365,148.63185223173323],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_YuhaiTemple.pointContent(Point_YuhaiTemple);
+
+var Point_Tintown_Yiquan= {
+    title:'绎泉',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[268.8052209375864,148.29659356247964],
+    minZoom:5.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Tintown_Yiquan.pointContent(Point_Tintown_Yiquan);
+
+
 
 
 
