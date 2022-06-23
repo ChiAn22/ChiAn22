@@ -23,7 +23,8 @@
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(10px);
             box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
-            top:8%
+            top:4em;
+            left: 0.8em;
         }
         #map .ol-zoom-in{
             background: rgb(255, 255, 255);
@@ -37,7 +38,8 @@
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(10px);
             box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
-            top:16%
+            top:7.6em;
+            left: 0.8em;
         }
         #map .ol-zoomslider-thumb{
             background: rgb(255, 255, 255);
@@ -46,27 +48,105 @@
         .pattern-cross-dots-xl{
             background: #363636;
         }
+        .EditModei{
+            box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+            background: #01ba61;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+        }
+        .EditModei:hover{
+            transition: 0.3s;
+            transform: scale(1.1,1.1);
+        }
     </style>
     <script src="ol.js" type="text/javascript"></script>
-    <title>首都地图</title>
+    <script src="ToolsPackage/EditMode.js" defer="defer" type="text/javascript"></script>
+    <title id="html_title">首都地图</title>
 </head>
 <body class="pattern-cross-dots-xl">
-
 <div id="Title_Nav">
     <div class="Title_Nav_Inner">
-        <div class="Title_Nav_Inner_Content">
+        <div class="Title_Nav_Inner_Content" style="justify-content: left;">
             <!--<img src="Css/CapitalCompassLogo.ico" class="Title_Img" alt=""><!-->
-            <p class="Title_Content">线上首都 Maps</p>
+            <p class="Title_Content" style=";user-select: none">线上首都 Maps</p>
         </div>
     </div>
 </div>
+<div id="_Msg"><div id="_Msg_Inner"></div></div>
+<div id="Edit">
+    <div style="position: absolute;z-index: 3;align-items: center;height: 20em;min-width:26em ;width: 40%;border-radius: 0.4em;background: rgba(43,43,43,1);overflow: hidden">
+        <div style="transition: 0.2s;display: flex;height: 2.6em;background: #01ba61" id="EditColor_1">
+            <div style="display: flex;width: 50%;height: 100%"></div>
+            <div style="display: flex;justify-content: right;align-items: center;width: 50%;height: 100%">
+                <div onclick="EditChange()" style="cursor: pointer;display: flex;justify-content: center;height:1.6em;width: 4.8em;border-radius: 0.4em;background: white;align-items: center;margin-right: 0.6em ">
+                    <p style="align-items: center;font-weight:bold;font-size: 0.8em;color: #000000;user-select: none" id="EditModeChanged">设置完成</p>
 
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;width: 100%;height: 6em">
+            <div style="display: flex;width: 16%;min-width: 5em;height: 100%;justify-content: center;flex-direction: column;padding:0 1em">
+                <p style="font-weight: bold;color: white;font-size: 1em;margin-bottom: 0.4em;user-select: none">常规设置</p>
+                <div style="display: flex;justify-content: left;align-items: center;flex-direction: row">
+                    <input type="checkbox" id="checkbox_1" class="CheckBox_1" onclick="EditModeSwitchiMsg('变更辅助标记',2000)" style="margin-right: 0.4em;user-select: none;align-items: center"><label for="checkbox_1" style="align-items: center;color: white;font-size: 0.8em">关闭辅标</label>
+                </div>
+                <div style="display: flex;justify-content:left;align-items: center;flex-direction: row">
+                    <input type="checkbox" id="checkbox_2" class="CheckBox_1" style="margin-right: 0.4em;user-select: none;align-items: center"><label for="checkbox_2" style="align-items: center;color: white;font-size: 0.8em">锁定缩放</label>
+                </div>
+            </div>
+            <div style="display: flex;width: 16%;min-width: 5em;height: 100%;justify-content: center;flex-direction: column;padding:0 1em">
+                <p style="font-weight: bold;color: rgba(255,255,255,0);font-size: 1em;margin-bottom: 0.4em;user-select: none">标记设置类</p>
+                <div style="display: flex;justify-content: left;align-items: center;flex-direction: row">
+                    <input type="checkbox" id="checkbox_3" class="CheckBox_1" onclick="EditModeSwitchiMsg('变更地区标记类型',2000)" style="margin-right: 0.4em;user-select: none;align-items: center"><label for="checkbox_1" style="align-items: center;color: white;font-size: 0.8em">地区类型</label>
+                </div>
+                <div style="display: flex;justify-content:left;align-items: center;flex-direction: row">
+                    <input type="checkbox" id="checkbox_4" class="CheckBox_1" onclick="EditModeSwitchiMsg('变更捷运标记类型',2000)" style="margin-right: 0.4em;user-select: none;align-items: center"><label for="checkbox_2" style="align-items: center;color: white;font-size: 0.8em">捷运类型</label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;width: 100%;height: 6em">
+            <div style="display: flex;width: 100%;height: 100%;justify-content: center;flex-direction: column;padding:0 1em">
+                <p style="font-weight: bold;color: white;font-size: 1em;margin-bottom: 0.4em;user-select: none">开发者设置</p>
+                <div style="display: flex;justify-content: left;align-items: center;flex-direction: row">
+                    <input type="checkbox" id="checkbox_5" class="CheckBox_1" style="margin-right: 0.4em;user-select: none;align-items: center"><label for="checkbox_5" style="align-items: center;color: white;font-size: 0.8em">Console message</label>
+                </div>
+                <div style="display: flex;justify-content:left;align-items: center;flex-direction: row">
+                    <input type="checkbox" id="checkbox_6" class="CheckBox_1" style="margin-right: 0.4em;user-select: none;align-items: center"><label for="checkbox_6" style="align-items: center;color: white;font-size: 0.8em">Check Mode</label>
+                </div>
+                <div style="display: flex;justify-content:left;align-items: center;flex-direction: row">
+                    <input type="checkbox" id="checkbox_7" class="CheckBox_1" style="margin-right: 0.4em;user-select: none;align-items: center"><label for="checkbox_7" style="align-items: center;color: white;font-size: 0.8em">Skip type select</label>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex;width: 100%;height: 1.8em">
+            <div style="display: flex;width: 100%;height: 100%;justify-content: center;flex-direction: column;padding:0 1em">
+                <p style="align-items: center;font-size: 0.6em;color: #ffffff;transform: translateY(+1em);user-select: none" id="Content_List">未标记任何内容</p>
+            </div>
+        </div>
+        <div style="display: flex;width: 100%;height: 3.6em">
+            <div style="display: flex;width: 100%;height: 100%;justify-content: center;flex-direction: column;padding:0 1em">
+                <div style="width: 5em;height: 1.6em;background: #424242;border-radius:0.4em;display: flex;justify-content: center;align-items: center;cursor: pointer" onclick="saveContent()">
+                    <p style="align-items: center;font-size: 0.8em;color: #ffffff;font-weight: bold;user-select: none">保存坐标</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute;z-index: 2;height: 100%;width: 100%" id="CloseEdit" onclick="CloseEdit()"></div>
+</div>
+<div class="EditMode" style="position: absolute;z-index: 5;right:0.8em;top: 4em;">
+    <div class="EditModei" id="EditColor_2" style="transition: 0.2s;height: 2.6em;width: 2.6em;border-radius: 1.3em" onclick="OpenEdit()">
+        <p id="EditModei_text" style="align-items: center;font-weight: bold;color: white;user-select: none">?</p>
+    </div>
+</div>
+<p id="info"></p>
 <div id="map" class="map"></div>
 <script defer="defer" type="text/javascript" src="Content/ContentType2.js"></script>
 <script defer="defer" type="text/javascript" src="Content/ContentType3.js"></script>
 <script defer="defer" type="text/javascript" src="Content/ContentTypePoint.js"></script>
 <script defer="defer" type="text/javascript" src="Content/ContentTypeIco.js"></script>
-<script defer="defer" type="text/javascript" src="Tools%20Package/AutoSticker.js"></script>
+<script defer="defer" type="text/javascript" src="ToolsPackage/AutoSticker.js"></script>
 <script type="text/javascript">
     var extent = [0, 0, 1000, 600];
     var projection = new ol.proj.Projection({
@@ -81,8 +161,7 @@
             new ol.layer.Image({
                 maxZoom: 5,
                 source: new ol.source.ImageStatic({
-                    //img2
-                    url: 'https://img1.imgtp.com/2022/05/16/EXhWgkcI.jpg',
+                    url: 'Maps/Map2.png',
                     projection: projection,
                     imageExtent: extent
                 })
@@ -90,8 +169,7 @@
             new ol.layer.Image({
                 minZoom: 5,
                 source: new ol.source.ImageStatic({
-                    //img1
-                    url: 'https://img1.imgtp.com/2022/05/16/qCfoV8G4.jpg',
+                    url: 'Maps/Map1.png',
                     projection: projection,
                     imageExtent: extent
                 })
@@ -110,12 +188,46 @@
         }),
         controls: ol.control.defaults().extend([new ol.control.ZoomSlider()]),
     });
+    let timer=false;
+    let info = document.getElementById('info');
+    map.on('pointermove',function (event){
+        const features = map.getFeaturesAtPixel(event.pixel);
+        if (features.length !== 0) {
+            let eo=features[0].getStyle().eo.eo;
+            info.innerText = eo;
+            if(timer===false){
+                document.getElementById('html_title').innerText='首都地图 · '+eo;
+                if(document.getElementById('checkbox_6').checked===true){
+                    iMsg(eo+' / '+features[0].getStyle().eo.Ha,2000);
+                }
+                timer=true;
+                info.style.transitionDuration='0.5s';
+                info.style.visibility='visible'
+                info.style.opacity = '1';
+                setTimeout(function (){
+                    info.style.transitionDuration='0.5s';
+                    info.style.visibility='hidden'
+                    info.style.opacity ='0';
+                    timer=false;
+                },3000)
+            }
+        }else {
 
+        }
+
+    });
+    var EditModeSwitch=false;
     map.on('click', function(evt) {
-        var coordinate = evt.coordinate;
-        console.log(coordinate);
-        if(window.confirm('要保存坐标['+coordinate+']吗')){
-            AutoSticker(coordinate);
+        if(EditModeSwitch===true){
+            var coordinate = evt.coordinate;
+            var ntext='无标题';
+            console.log(coordinate);
+            if(window.confirm('要保存坐标['+coordinate+']吗')){
+                ntext=AutoSticker(coordinate);
+                if(Content_[0]!==true){
+                    InfoPoint(coordinate,ntext);
+                }
+            }
         }
     })
 </script>
