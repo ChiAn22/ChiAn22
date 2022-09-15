@@ -1,0 +1,147 @@
+#Title_Nav{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 3em;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.Title_Nav_Inner{
+    width: inherit;
+    height: 100%;
+    display: flex;
+}
+
+.Title_Nav_Inner_Content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Title_Img{
+    height: 80%;
+    width: auto;
+    margin-left: 2%;
+}
+.Title_Content{
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 0.8em;
+    font-size: 1.2em;
+}
+#ultraScreen{
+    transition:0.3s;
+}
+#Edit{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#info{
+    transition: 0.5s;
+    visibility: hidden;
+    position: absolute;
+    z-index: 10;
+    text-align: right;
+    bottom: 2.8em;
+    right: 0.8em;
+    font-size: 16px;
+    font-weight: bold
+}
+#_Msg_Inner{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 10;
+    width: fit-content;
+    height: 2em;
+    background: #FFFFFF;
+    border-radius: 0.4em;
+    top: 7.6em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+    right: 0.8em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+#Information_Inner{
+    position: absolute;
+    z-index: 12;
+    right:0.8em;
+    bottom: 0.8em;
+    background: #232323;
+    border-radius: 0.5em;
+    height: 5.6em;
+    width: 15em;
+    padding: 0.8em;
+}
+.Information_Inner_text1{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0.6em;
+}
+.Information_Inner_text2{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+}
+#_Information{
+    transition: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+}
+.checkbox_[type=checkbox]{
+    appearance: none;
+    transition: 0.2s;
+    border-radius: 0.2em;
+    height: 1em;
+    width: 1em;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+.checkbox_[type=checkbox]:checked{
+    appearance: none;
+    border:solid #ffffff 0.2em;
+    transition: 0.2s;
+    border-radius: 0.2em;
+    height: 1em;
+    width: 1em;
+        background-color: #000000;
+    color: #000000;
+}
+.Content_Information{
+    transform: translateX(-400%);
+    transition: 0.5s;
+    z-index: 1;
+    position: fixed;
+    left: 0.8em;
+    bottom: 0.8em;
+    width: 18em;
+    height: 4em;
+    background: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 0.4em;
+    border-radius: 0.4em;
+    padding: 0.4em;
+}
