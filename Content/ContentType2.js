@@ -1,7 +1,6 @@
 //二级区域 · 特别注释
 
 function Content(a){
-
     var mainFeature = new ol.Feature({
         geometry: new ol.geom.Point(a.location),
         zoomValue:a.minZoom||'SUB',

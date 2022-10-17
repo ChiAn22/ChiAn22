@@ -110,6 +110,9 @@ function colorSelect(a){
     else if(a==='公园'){
         return '#62af40';
     }
+    else if(a==='特殊'){
+        return '#625ec5';
+    }
 }
 
 function fakeClick(obj) {

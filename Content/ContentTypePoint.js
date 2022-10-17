@@ -8,7 +8,6 @@ function PointContent(a){
     var mainFeaturePoint = new ol.Feature({
         geometry: new ol.geom.Point(a.location),
         zoomValue:a.minZoom,
-
     });
 
     mainFeature.setStyle(createLabelStyle(mainFeature));
@@ -23,23 +22,25 @@ function PointContent(a){
         minZoom:a.minZoom,
     });
 
-    map.addLayer(vectorLayer);
+    if(window.location.href.includes('index.html')){
+        map.addLayer(vectorLayer);
+    }
     function createLabelStyle(){
         return new ol.style.Style({
-                text: new ol.style.Text({
-                    textAlign: 'left',
-                    textBaseline: 'middle',
-                    font: a.fontWeight+' '+a.fontSize+' '+'Font1',
-                    text: a.title,
-                    offsetX:a.offsetX||7,
-                    offsetY:a.offsetX||1,
-                    fill: new ol.style.Fill({
-                        color: a.contentColor
-                    }),
-                    stroke: new ol.style.Stroke({
-                        color: a.outlineColor,
-                        width: a.strokeWitdh||1,
-                    })
+            text: new ol.style.Text({
+                textAlign: 'left',
+                textBaseline: 'middle',
+                font: a.fontWeight+' '+a.fontSize+' '+'Font1',
+                text: a.title,
+                offsetX:a.offsetX||7,
+                offsetY:a.offsetX||1,
+                fill: new ol.style.Fill({
+                    color: a.contentColor
+                }),
+                stroke: new ol.style.Stroke({
+                    color: a.outlineColor,
+                    width: a.strokeWitdh||1,
+                })
             })
         });
     }
@@ -135,7 +136,6 @@ var Point_HenjiangMHS= {
     pointContent: PointContent,
     pointSize:4,
 }
-
 Point_HenjiangMHS.pointContent(Point_HenjiangMHS);
 
 var Point_ShyampooHarbour= {
@@ -294,7 +294,23 @@ var Point_AnCompany01= {
     CI:{
         Title:'安氏科技总部',
         ConciseIntroduce:'欢迎做客(By Ra)(o^▽^o)ﾉ',
-        Url:'',
+        Url:{
+            Name:'Point_AnCompany01',
+            Introduce:'',
+            Date:'2022/9/29',
+            OriginalWriter:'Ra (o^▽^o)ﾉ',
+            Main:[
+                {type: 'Image',Content: '/Css/TestImg/安氏科技.PNG'},
+                {type: 'br'},
+                {type:'Main', Content:'这里是An Company安氏科技的总部所在地，拥有进行科研开发与试验的现代建筑群。',},
+                {type:'Audio',Content:'<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/whiplash/1247335504?i=1247335804"></iframe>'},
+                {type:'Main', Content:'但总部貌似不对游客开放，外来人员或记者需预约才能入内。',},
+                {type:'Main', Content:'地点位于南海岸地区中部，紧邻芝港西大道与南海岸滩街。',},
+                {type: 'br'},
+                {type:'Hashtag',Content: ['Info By Ra','An Company安氏科技']},
+            ],
+            Hashtag:'',
+        },
         For:'An Company安氏科技',
     }
 }
@@ -524,6 +540,13 @@ var Point_AreaLeadersOfChisan= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'欢迎拜访芝港区！',
+        ConciseIntroduce:'全港市的政治、文化与商业中心，由于行政区位于芝山山下港埠一带，因而得名芝港区。',
+        Url:'',
+        For:'收录在《漫游芝山》',
+        Width:'20em',
+    },
 }
 Point_AreaLeadersOfChisan.pointContent(Point_AreaLeadersOfChisan);
 
@@ -998,6 +1021,13 @@ var Point_SomonreninPark= {
     minZoom:4.8,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'总理的痕迹',
+        ConciseIntroduce:'唯一的染色人工湖泊，灵感来自于总理的画作《落日桃湖》。',
+        Url:'',
+        For:'收录在《漫游芝山》',
+        Width:'20em',
+    },
 }
 Point_SomonreninPark.pointContent(Point_SomonreninPark);
 
@@ -1206,6 +1236,12 @@ var Point_MainTempleOfCET= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'树下民生：榆水',
+        ConciseIntroduce:'“榆木树下溪流清澈”，这里是旧时代用于向天海献祭的传统文化寺廟。',
+        Url:'',
+        For:'收录在《漫游芝山》',
+    },
 }
 Point_MainTempleOfCET.pointContent(Point_MainTempleOfCET);
 
@@ -1252,12 +1288,18 @@ var Point_VisionChisan01= {
     title:'江绝楼遮寺',
     fontSize:'10px',
     fontWeight:'bold',
-    contentColor:'#6b6b6b',
+    contentColor:'#625ec5',
     outlineColor:'#ffffff',
     location:[326.11864314226074,187.13041933638],
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'最繁华：大芝港',
+        ConciseIntroduce:'在滨江之城中迷失，或仰视旧时代的威严廟宇。',
+        Url:'',
+        For:'收录在《俯见芝山》',
+    },
 }
 Point_VisionChisan01.pointContent(Point_VisionChisan01);
 
@@ -1440,6 +1482,12 @@ var Point_QueCityPark= {
     minZoom:5.2,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'雨吹神雀',
+        ConciseIntroduce:'诞生于旧时代，传说神雀曾筑巢与此地，为人民带来天降甘霖。',
+        Url:'',
+        For:'收录在《俯见芝山》',
+    },
 }
 Point_QueCityPark.pointContent(Point_QueCityPark);
 
@@ -1635,6 +1683,12 @@ var Point_ThaichiTemple= {
     minZoom:4.8,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'旧时代建筑大赏：苔芝正寺',
+        ConciseIntroduce:'屹立于涯边的古代寺庙，在无数风雨中为芝山人民带来丰收与好运。',
+        Url:'',
+        For:'收录在《俯见芝山》',
+    },
 }
 Point_ThaichiTemple.pointContent(Point_ThaichiTemple);
 
@@ -2207,6 +2261,12 @@ var Point_Tintown_Hurilou= {
     minZoom:5.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'店主的建议',
+        ConciseIntroduce:'槲栎楼没有狐狸摸，因为本店铺是民营茶舍。',
+        Url:'',
+        For:'收录在《俯见芝山》',
+    },
 }
 Point_Tintown_Hurilou.pointContent(Point_Tintown_Hurilou);
 
@@ -2350,6 +2410,34 @@ var Point_JadeGarden_Hall_Ru= {
     minZoom:5.2,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'聚焦文学美:麓馆文学殿堂',
+        ConciseIntroduce:'享誉盛名，这座深藏在树林深处的仿古建筑是首都文学界的骄傲。',
+        Url:{
+            Name:'Point_JadeGarden_Hall_Ru',
+            Introduce:'',
+            Date:'2022/10/14',
+            OriginalWriter:'成安柚子',
+            Main:[
+                {type:'Main', Content:'享誉盛名，这座深藏在树林深处的仿古建筑是首都文学界的骄傲。',},
+                {type:'Main', Content:'当游客徘徊于枝叶招展的麓园深处，时常会被一座古雅的暗色红砖建筑所震撼。那便是被视为“文学圣地”的麓馆文学殿堂，全港市文部厅机构所谓“首都文联”的总部所在地。',},
+                {type: 'br'},
+                {type: 'Audio',Content: '<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/energetic/1569282309?i=1569282316"></iframe>'},
+                {type: 'br'},
+                {type: 'Main',Content: '关于翡翠园：'},
+                {type: 'Main',Content: '翡翠园又名“麓园(Jade Garden)”，位于江代地区東南部，是一座跨时代后建造的仿旧时代式园林，有着“深色碧珠”一称。关于翡翠园内暗色系且古今混搭的清透碧绿摆设与装点设计，在建筑圈内颇有盛名，有人说设计师成功的将古代文化融入了现代的视觉引导布局，也有人说翡翠园的布局集合了“東西方建筑之特色”，给予人极其舒适的视觉体验。该园林与周围街道从卫星上俯瞰犹如一颗镶嵌在都市之中的翡翠明珠，故称为“翡翠园”。翡翠园同时也是“首都文联”的象征，被首都范围的文学人士称为“文学界的精神圣地”，在该街区坐落着密集的“首都文联”办公与学术部门，因此，有时人们会直接用“翡翠园”三字来称呼“首都文联”。'},
+                {type: 'br'},
+                {type:'Audio',Content: '<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/light/1570736770?i=1570736772"></iframe>'},
+                {type: 'br'},
+                {type: 'Main',Content: '关于首都文联(首都文科学界联合会)：'},
+                {type: 'Main',Content: '首都文联是首都公式旗下的“文科学界”盟会式机构，该机构负责统筹首都范围全部的文科学界发展与前沿学术议论会等。人们对首都文联的评价往往是“由一群陈腐的老年人组成的派对”，为了消除人们的刻板印象，现代第三阶段，首都文联正式成立“对外宣传部门”（即“首都文创中心”），并深刻展开检讨，成立并成建有关学风治理的监督部门。首都文联总部位于江代地区的翡翠园街头，首要的学术报告厅被称为“麓馆会议中心”，因为街道两旁生长着十分古老的法国梧桐，所以这里看起来常年阴暗。" 虽然这群自大的老年人面对新生事物深闭固拒，但对于坚持某些敏感问题的底线，他们却能展现出令人佩服的恪守不渝。"'},
+                {type: 'br'},
+                {type:'Hashtag',Content: ['京川新闻厅-云游全国','成安柚子记者','麓馆文学殿堂','首都文联']},
+            ],
+            Hashtag:'',
+        },
+        For:'收录在《未来述白》',
+    }
 }
 Point_JadeGarden_Hall_Ru.pointContent(Point_JadeGarden_Hall_Ru);
 
@@ -2814,7 +2902,25 @@ var Point_Gutyan_TemplePark= {
     CI:{
         Title:'记忆中的“裕斐妈妈”是什么样的？',
         ConciseIntroduce:'游憩廟堂公园，在树林与瀑布中发现“裕斐妈妈”的踪迹。',
-        Url:'',
+        Url:{
+            Name:'Point_Gutyan_TemplePark',
+            Introduce:'',
+            Date:'2022/9/30',
+            OriginalWriter:'首都公式建议',
+            Main:[
+                {type:'Main', Content:'关于廟堂公园：',},
+                {type:'Main', Content:'廟堂公园是南天际地区一座狭长的城市森林公园，包括蒜薹街与一些花卉市场在内，是本地最热门的公园休闲场所。廟堂公园因特色的热带山水而吸引游客前往，园内种植了各种灌木、攀缘植物与多年生植物。在公园的正中心，有一座名为“贾人祠”的淡紫色寺庙，这是传说中埋葬“贾田公子”与“裕斐妈妈”的地方，被本地人视为精神圣地。在寺庙的附近坐落着一座小型瀑布，瀑布的水来自地下，当地人称之为“金钱泉”。廟堂公园树木荫蔽，是避暑的风水宝地，夏季走在公园里，能清楚地感受到迎面而来的冰爽雾气。',},
+                {type:'Audio',Content:'<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/sax-on-the-beach/1439587224?i=1439587226"></iframe>'},
+                {type: 'br'},
+                {type:'Main', Content:'在廟堂公园中，寻找关于“裕斐妈妈”的记忆：',},
+                {type:'Main', Content:'涯边善女——是人们对她的赞称。相传在旧时代，在任何拜访贾田的访客，都能因热心的裕斐妈妈而留下深刻的回忆。曾与贾田公子一同工作的渔农如是评价：“她独立且自强，性格向来和善。仅是目睹那般笑容，或感受到那股热情便能使大家的矛盾化解。”',},
+                {type:'Audio',Content:'<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/cn/album/summa-time/1435849207?i=1435849475"></iframe>'},
+                {type:'Main', Content:'裕斐妈妈是旧时代贾田地区独立女性的代表人物，后代人之所以将裕斐妈妈视作精神象征，这也是贾田文化中“爱和爱善”的体现。如今出行在廟堂公园，不难遇见前来纪念裕斐妈妈的游客，许多当地女孩将其视为成长的目标，松门乐宁总理评价说：“这是一个好现象”。',},
+                {type: 'br'},
+                {type:'Hashtag',Content: ['一周建议','漫游首都计划','首都公式']},
+            ],
+            Hashtag:'',
+        },
         For:'收录在《未来述白》',
         Width:'20em',
     }
@@ -3016,9 +3122,900 @@ var Point_Gutyan_FieldWay= {
 }
 Point_Gutyan_FieldWay.pointContent(Point_Gutyan_FieldWay);
 
+var Point_Kansando_Promenade= {
+    title:'瞰山道 Promenade',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[536.228127444759,78.56684933735696],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Kansando_Promenade.pointContent(Point_Kansando_Promenade);
 
+var Point_BehindTheStation_CityPark= {
+    title:'站前公园',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[533.4336318947475,83.83860755568179],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BehindTheStation_CityPark.pointContent(Point_BehindTheStation_CityPark);
 
+var Point_Dition_Capital= {
+    title:'邸深 · 全港',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[540.3291592334683,71.7293894560829],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Dition_Capital.pointContent(Point_Dition_Capital);
 
+var Point_CapitalHarbour_CI= {
+    title:'港埠首都醫療',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[526.8568270727612,66.17912160527756],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_CapitalHarbour_CI.pointContent(Point_CapitalHarbour_CI);
 
+var Point_MonroilRoad= {
+    title:'Monroil Road',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[537.7867956115632,74.61998911990962],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_MonroilRoad.pointContent(Point_MonroilRoad);
 
+var Point_SomonBridge_W_Livehouse= {
+    title:'前桥 Livehouse',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[413.3516981523117,133.29212534438582],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_SomonBridge_W_Livehouse.pointContent(Point_SomonBridge_W_Livehouse);
+
+var Point_JadeGarden_SOHO= {
+    title:'翡翠园 SOHO',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[426.6412171012779,155.90345395661956],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_JadeGarden_SOHO.pointContent(Point_JadeGarden_SOHO);
+
+var Point_TheGuestFieldOfCEN= {
+    title:'国家迎宾场',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[428.71450867786814,127.58393592652702],
+    minZoom:4.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_TheGuestFieldOfCEN.pointContent(Point_TheGuestFieldOfCEN);
+
+var Point_JadeBlOfCEN= {
+    title:'白玉筑',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[431.30044937171704,126.57014634385946],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_JadeBlOfCEN.pointContent(Point_JadeBlOfCEN);
+
+var Point_ChisanJiangbu= {
+    title:'芝山江埗',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#625ec5',
+    outlineColor:'#ffffff',
+    location:[378.16583574389875,188.0960720076694],
+    minZoom:4.4,
+    pointContent: PointContent,
+    pointSize:4,
+    CI:{
+        Title:'芝山故事',
+        ConciseIntroduce:'风景仿佛在诉说芝山的繁华史，这里是大江埗最热门的看点。',
+        Url:'',
+        For:'收录在《未来述白》',
+    },
+}
+Point_ChisanJiangbu.pointContent(Point_ChisanJiangbu);
+
+var Point_YuhaiTemple_CandlelightField= {
+    title:'烛场',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#625ec5',
+    outlineColor:'#ffffff',
+    location:[508.25063657962306,146.44470296448245],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+    CI:{
+        Title:'最梦幻：行步烛场',
+        ConciseIntroduce:'据说点亮寺内烛光的每一位信者，都会得到梦主的保佑，而慷慨的梦主会将信者梦中所发生的事物带入现实。',
+        Url:'',
+        For:'收录在《未来述白》',
+        Width:'20em'
+    },
+}
+Point_YuhaiTemple_CandlelightField.pointContent(Point_YuhaiTemple_CandlelightField);
+
+var Point_Rochi_Coast= {
+    title:'落芝海滨广场',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[222.15625241457798,88.96620995985145],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Rochi_Coast.pointContent(Point_Rochi_Coast);
+
+var Point_LakeBridge_HushuiTemple= {
+    title:'湖水寺',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[212.6759359225507,197.77725412005697],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_LakeBridge_HushuiTemple.pointContent(Point_LakeBridge_HushuiTemple);
+
+var Point_Southcoast_Street_Promenade= {
+    title:'滩街行步道',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[151.56750555069985,203.83966133640777],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Southcoast_Street_Promenade.pointContent(Point_Southcoast_Street_Promenade);
+
+var Point_TAJIANGBU_InformationOfSouth= {
+    title:'南大江埗访客中心',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[374.9594917254308,168.75023877687613],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_TAJIANGBU_InformationOfSouth.pointContent(Point_TAJIANGBU_InformationOfSouth);
+
+var Point_ChongninMedicalUniversity= {
+    title:'空港医科大学',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6695cf',
+    outlineColor:'#ffffff',
+    location:[456.5165776037311,112.42252678310304],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ChongninMedicalUniversity.pointContent(Point_ChongninMedicalUniversity);
+
+var Point_ChongninMedicalUniversityOfCI= {
+    title:'空港医大\n附属首都醫療',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[456.69343159658763,114.89848268309497],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ChongninMedicalUniversityOfCI.pointContent(Point_ChongninMedicalUniversityOfCI);
+
+var Point_TheSkylineVisionOfChongnin= {
+    title:'空港天际线',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[467.17716597043125,111.846427595482],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_TheSkylineVisionOfChongnin.pointContent(Point_TheSkylineVisionOfChongnin);
+
+var Point_TheHorizonTactusOfChongnin= {
+    title:'空港地平线',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[463.84721888525553,107.44013517010451],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_TheHorizonTactusOfChongnin.pointContent(Point_TheHorizonTactusOfChongnin);
+
+var Point_OuterAirport_DutyFree= {
+    title:'港外免税',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[476.5874755230286,115.57580166258695],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_OuterAirport_DutyFree.pointContent(Point_OuterAirport_DutyFree);
+
+var Point_SomonBridge= {
+    title:'松门桥',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[433.6668535652396,134.21306719668692],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_SomonBridge.pointContent(Point_SomonBridge);
+
+var Point_DockyardOfJiuzhoupu= {
+    title:'九洲堡船坞',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[408.9180387474996,60.87487032894542],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_DockyardOfJiuzhoupu.pointContent(Point_DockyardOfJiuzhoupu);
+
+var Point_Shenshui_01= {
+    title:'深水化工',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[500.4562616055891,63.28449095249922],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Shenshui_01.pointContent(Point_Shenshui_01);
+
+var Point_Shenshui_02= {
+    title:'西川制冷集团',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[501.91936953086275,59.42721134239412],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Shenshui_02.pointContent(Point_Shenshui_02);
+
+var Point_Shenshui_University= {
+    title:'深水工业大学',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6695cf',
+    outlineColor:'#ffffff',
+    location:[490.6767218503721,59.34072109148387],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Shenshui_University.pointContent(Point_Shenshui_University);
+
+var Point_Dariang_Package= {
+    title:'大田大良包装',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[494.45746522682276,56.758906470243005],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Dariang_Package.pointContent(Point_Dariang_Package);
+
+var Point_KansanAutopartsCenter= {
+    title:'瞰山汽配中心',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[533.357344750182,70.02796077191798],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_KansanAutopartsCenter.pointContent(Point_KansanAutopartsCenter);
+
+var Point_ShiouHarbour_Bd= {
+    title:'实物港管控行政楼',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[536.7621319610906,52.59170636787405],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ShiouHarbour_Bd.pointContent(Point_ShiouHarbour_Bd);
+
+var Point_Greenblue_01= {
+    title:'绿蓝集装',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[538.0691068848593,58.382808010700636],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Greenblue_01.pointContent(Point_Greenblue_01);
+
+var Point_PalmExpress_ShiouHarbour= {
+    title:'棕榈物流',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[535.334372996488,55.12996005359501],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_PalmExpress_ShiouHarbour.pointContent(Point_PalmExpress_ShiouHarbour);
+
+var Point_LautTaman_01= {
+    title:'劳特塔曼旁道维修站',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[419.98038191426434,61.94498412005027],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_LautTaman_01.pointContent(Point_LautTaman_01);
+
+var Point_Chenbein_InsidePort= {
+    title:'臣滨内埠',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[307.60285023955146,226.65171682814952],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Chenbein_InsidePort.pointContent(Point_Chenbein_InsidePort);
+
+var Point_SouthChi_Tsianshi= {
+    title:'千禧',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[267.88439123900935,220.61940282248898],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_SouthChi_Tsianshi.pointContent(Point_SouthChi_Tsianshi);
+
+var Point_SouthChi_HavanaBar= {
+    title:'Havana Bar',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[260.7444078268358,226.924488851122],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_SouthChi_HavanaBar.pointContent(Point_SouthChi_HavanaBar);
+
+var Point_SouthChi_SpringSmart= {
+    title:'Spring Smart',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[251.17338526621282,223.1881742597039],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_SouthChi_SpringSmart.pointContent(Point_SouthChi_SpringSmart);
+
+var Point_SouthChi_SC_Entertainment= {
+    title:'SC Entertainment',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[262.6431545380669,230.00777675016232],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_SouthChi_SC_Entertainment.pointContent(Point_SouthChi_SC_Entertainment);
+
+var Point_SouthChi_HarbourCafe= {
+    title:'Harbour Cafe',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[300.6442395624554,226.42040502167754],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_SouthChi_HarbourCafe.pointContent(Point_SouthChi_HarbourCafe);
+
+var Point_SouthChi_Queenshot= {
+    title:'Queenshot',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[259.24186268430964,233.1557355842939],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_SouthChi_Queenshot.pointContent(Point_SouthChi_Queenshot);
+
+var Point_HarbourCafe_Henjiang= {
+    title:'Harbour Cafe',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[314.6873052796151,203.2087557695704],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_HarbourCafe_Henjiang.pointContent(Point_HarbourCafe_Henjiang);
+
+var Point_Marina_Lydilia= {
+    title:'里底利亚船埠',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[394.453796685669,225.53941853073894],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+    CI:{
+        Title:'乘船游双庭',
+        ConciseIntroduce:'在微风摇曳的晚春时分，在里底利亚船舶乘船观光双庭风景。',
+        Url:'',
+        For:'收录在《藝術時代》',
+    },
+}
+Point_Marina_Lydilia.pointContent(Point_Marina_Lydilia);
+
+var Point_Mashru_Bd= {
+    title:'Mashru Bd.',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[428.05898383187844,231.94740789170027],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Mashru_Bd.pointContent(Point_Mashru_Bd);
+
+var Point_ShipCanal_Hotel= {
+    title:'Ship Canal Hotel',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[420.18101804882804,231.33838067382334],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ShipCanal_Hotel.pointContent(Point_ShipCanal_Hotel);
+
+var Point_Marina_Lydilia02= {
+    title:'Marina Lydilia\nShip Information',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[394.9152598157303,224.94760408293692],
+    minZoom:7.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Marina_Lydilia02.pointContent(Point_Marina_Lydilia02);
+
+var Point_Local_Alyce_St_Store= {
+    title:'St. Store',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[421.8193512563666,233.8574972598102],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Local_Alyce_St_Store.pointContent(Point_Local_Alyce_St_Store);
+
+var Point_CapitalStation_Citypark_Tienyuantin= {
+    title:'田园亭',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[393.8145333220308,244.2584710344249],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_CapitalStation_Citypark_Tienyuantin.pointContent(Point_CapitalStation_Citypark_Tienyuantin);
+
+var Point_DriveBy_Studio= {
+    title:'The Drive By\nMusic Studio',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[407.3322205091791,231.11964742314802],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_DriveBy_Studio.pointContent(Point_DriveBy_Studio);
+
+var Point_Renin_Block_Bd= {
+    title:'Renin Block Bd.',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[413.85535693823306,237.11713256741444],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Renin_Block_Bd.pointContent(Point_Renin_Block_Bd);
+
+var Point_Dudu_Home= {
+    title:'嘟嘟的家',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[204.10931445238754,193.26458617526237],
+    minZoom:6.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Dudu_Home.pointContent(Point_Dudu_Home);
+
+var Point_ChengyaRoads_ClassicalTheatre= {
+    title:'晟崖路古典戏剧馆',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[413.6492619017075,186.6806493960573],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ChengyaRoads_ClassicalTheatre.pointContent(Point_ChengyaRoads_ClassicalTheatre);
+
+var Point_Fuien_InternationalArena= {
+    title:'福沿国际竞技馆',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[424.29501973565436,185.35641083720452],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Fuien_InternationalArena.pointContent(Point_Fuien_InternationalArena);
+
+var Point_Mufu_University= {
+    title:'升洲航空大学',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6695cf',
+    outlineColor:'#ffffff',
+    location:[420.88761935353756,173.2243615126314],
+    minZoom:4.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Mufu_University.pointContent(Point_Mufu_University);
+
+var Point_TheGuestFieldOfShuiqueMen= {
+    title:'国家迎宾场-水雀门',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[433.4769812209873,188.10748578475236],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_TheGuestFieldOfShuiqueMen.pointContent(Point_TheGuestFieldOfShuiqueMen);
+
+var Point_TheGuestFieldOfShuiqueMen_TheGate= {
+    title:'水雀正门',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[431.57656740849023,188.22509332733364],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_TheGuestFieldOfShuiqueMen_TheGate.pointContent(Point_TheGuestFieldOfShuiqueMen_TheGate);
+
+var Point_TheBloomingGarden_Information= {
+    title:'苑宫赏花园\n游客问询中心',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[409.6707226209348,65.59940990093602],
+    minZoom:7.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_TheBloomingGarden_Information.pointContent(Point_TheBloomingGarden_Information);
+
+var Point_LautTaman= {
+    title:'Laut Taman',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[418.9944211682152,62.977289981828946],
+    minZoom:5.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_LautTaman.pointContent(Point_LautTaman);
+
+var Point_BestMemory_SummerBloom= {
+    title:'Best Memory\nSummer Bloom',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[410.51289402232436,67.452167812686],
+    minZoom:6.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BestMemory_SummerBloom.pointContent(Point_BestMemory_SummerBloom);
+
+var Point_TheBloomingGarden= {
+    title:'苑宫赏花园',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[409.4891285289968,66.82536431816956],
+    minZoom:6.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_TheBloomingGarden.pointContent(Point_TheBloomingGarden);
+
+var Point_AreaLeadersOfChongnin= {
+    title:'空港区域行政厅',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[444.32723633832313,120.17404614115233],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+    CI:{
+        Title:'欢迎拜访空港区！',
+        ConciseIntroduce:'首都东部重要的政治、文化、工商业等综合中心，是全港市空运与海运的城市大门，世界级航空枢纽所在地。',
+        Url:'',
+        For:'收录在《未来述白》',
+        Width:'20em',
+    },
+}
+Point_AreaLeadersOfChongnin.pointContent(Point_AreaLeadersOfChongnin);
+
+var Point_ONDE_RecordingStudio= {
+    title:'ONDE Recording Studio',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[440.89255956416537,231.1859576027236],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ONDE_RecordingStudio.pointContent(Point_ONDE_RecordingStudio);
+
+var Point_ONDE_RecordingStudio_1= {
+    title:'Recording room by choall',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[441.55279529785935,231.83859053448217],
+    minZoom:6.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ONDE_RecordingStudio_1.pointContent(Point_ONDE_RecordingStudio_1);
+
+var Point_ONDE_Ent_Bellesh= {
+    title:'ONDE Ent.',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[440.76048603581586,231.6888413304938],
+    minZoom:6.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_ONDE_Ent_Bellesh.pointContent(Point_ONDE_Ent_Bellesh);
+
+var Point_Bellesh_Park= {
+    title:'Bellesh Park',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[450.0318514819213,219.52982568193008],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Bellesh_Park.pointContent(Point_Bellesh_Park);
+
+var Point_Jero_CDW_Field= {
+    title:'灾防演练场',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[432.62610376038,231.08414061780564],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Jero_CDW_Field.pointContent(Point_Jero_CDW_Field);
+
+var Point_Banny_Art_Museum= {
+    title:'Banny Museum',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[432.10910592360756,229.59859723160795],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Banny_Art_Museum.pointContent(Point_Banny_Art_Museum);
+
+var Point_Bellesh_Bridge_Field= {
+    title:'Bridge Field',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[434.70546164028065,235.71717633852037],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Bellesh_Bridge_Field.pointContent(Point_Bellesh_Bridge_Field);
+
+var Point_Bellesh_CarWash_1= {
+    title:'Car Wash',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[449.523996190714,225.18339887555368],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Bellesh_CarWash_1.pointContent(Point_Bellesh_CarWash_1);
+
+var Point_Bellesh_Futaba_Speaker= {
+    title:'Futaba Speaker',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[439.56652193770776,224.43630897502447],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Bellesh_Futaba_Speaker.pointContent(Point_Bellesh_Futaba_Speaker);
 

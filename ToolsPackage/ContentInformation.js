@@ -8,18 +8,21 @@ var Information={
             let div=document.getElementById('Content_Information');
             div.style.width=Width||'16em';
             let ForColour='#000',text;
-            if(Url===undefined||''){
+            if(Url===undefined){
                 iMsg('此词条的专题页正在准备中',2000);
                 text='';
+            }else {
+                text='Content/Page/Information.html?'+Url.Name;
             }
-            if(For===undefined){
-                ForColour='#000';
-            }else if(For==='收录在《漫游芝山》'){
-                ForColour='#e2992b';
-            }else if(For==='收录在《未来述白》'){
-                ForColour='#3f41c9';
-            }else if(For==='收录在《藝術時代》'){
-                ForColour='#12bdaf';
+            switch (For){
+                case '收录在《漫游芝山》':ForColour='#e2992b'
+                    break;
+                case '收录在《未来述白》':ForColour='#3f41c9'
+                    break;
+                case '收录在《藝術時代》':ForColour='#12bdaf'
+                    break;
+                case '收录在《俯见芝山》':ForColour='#462f00'
+                    break;
             }
             div.innerHTML='<div style="width: 100%;height: 40%;display: flex">\n' +
                 '        <p style="display: flex;align-items: center;color: black;font-weight: bold;font-size: 1.2em">'+Title+'</p>\n' +
@@ -29,7 +32,7 @@ var Information={
                 '        <p style="align-items: center;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 0.8em">'+ConciseIntroduce+'</p>\n' +
                 '        <div style="display: flex;align-items: center;width: 100%">\n' +
                 '            <div style="display: flex;align-items: center;width: 40%">\n' +
-                '                <a style="display: flex;align-items: center;font-size: 0.8em;" '+text+'">查看详情></a>\n' +
+                '                <a style="display: flex;align-items: center;font-size: 0.8em;" href="'+text+'"">查看详情></a>\n' +
                 '            </div>\n' +
                 '            <div style="display: flex;align-items: center;width: 60%;background: '+ForColour+';border-radius: 0.2em;justify-content: center">\n' +
                 '                <p style="display: flex;align-items: center;font-size: 0.8em;color: #ffffff;justify-content: center">'+For+'</p>\n' +
@@ -52,18 +55,21 @@ var Information={
             setTimeout(function (){
                 CI_Switch=true;
                 let ForColour='#000',text;
-                if(Url===undefined||''){
+                if(Url===undefined){
                     iMsg('此词条的专题页正在准备中',2000);
                     text='';
+                }else {
+                    text='Content/Page/Information.html?'+Url.Name;
                 }
-                if(For===undefined){
-                    ForColour='#000';
-                }else if(For==='收录在《漫游芝山》'){
-                    ForColour='#e2992b';
-                }else if(For==='收录在《未来述白》'){
-                    ForColour='#3f41c9';
-                }else if(For==='收录在《藝術時代》'){
-                    ForColour='#12bdaf';
+                switch (For){
+                    case '收录在《漫游芝山》':ForColour='#e2992b'
+                        break;
+                    case '收录在《未来述白》':ForColour='#3f41c9'
+                        break;
+                    case '收录在《藝術時代》':ForColour='#12bdaf'
+                        break;
+                    case '收录在《俯见芝山》':ForColour='#462f00'
+                        break;
                 }
                 div.innerHTML='<div style="width: 100%;height: 40%;display: flex">\n' +
                     '        <p style="display: flex;align-items: center;color: black;font-weight: bold;font-size: 1.2em">'+Title+'</p>\n' +
@@ -73,7 +79,7 @@ var Information={
                     '        <p style="align-items: center;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 0.8em">'+ConciseIntroduce+'</p>\n' +
                     '        <div style="display: flex;align-items: center;width: 100%">\n' +
                     '            <div style="display: flex;align-items: center;width: 40%">\n' +
-                    '                <a style="display: flex;align-items: center;font-size: 0.8em;" '+text+'">查看详情></a>\n' +
+                    '                <a style="display: flex;align-items: center;font-size: 0.8em;" href="'+text+'"">查看详情></a>\n' +
                     '            </div>\n' +
                     '            <div style="display: flex;align-items: center;width: 60%;background: '+ForColour+';border-radius: 0.2em;justify-content: center">\n' +
                     '                <p style="display: flex;align-items: center;font-size: 0.8em;color: #ffffff;justify-content: center">'+For+'</p>\n' +

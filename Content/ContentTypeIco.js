@@ -1041,7 +1041,7 @@ Alert_Chongnin_003.icoContent(Alert_Chongnin_003);
         contentColor:'#6b6b6b',
         outlineColor:'#ffffff',
         location:[276.8, 236.4],
-        minZoom:5.2,
+        minZoom:5.0,
         icoSrc:Copyright_Icon.AfterCoye,
         icoContent: IcoContent,
     }
@@ -1058,6 +1058,18 @@ Alert_Chongnin_003.icoContent(Alert_Chongnin_003);
         icoContent: IcoContent,
     }
     Ico_AfterCoye002.icoContent(Ico_AfterCoye002);
+    var Ico_AfterCoye003= {
+        title:'After Coye',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#6b6b6b',
+        outlineColor:'#ffffff',
+        location:[245.7,173.4],
+        minZoom:5.8,
+        icoSrc:Copyright_Icon.AfterCoye,
+        icoContent: IcoContent,
+    }
+    Ico_AfterCoye003.icoContent(Ico_AfterCoye003);
 
 //大获福
     var Ico_TAHOFU001= {

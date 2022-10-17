@@ -2,7 +2,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" type="image/x-ico" href="Css/CapitalCompassLogo.ico" />
+    <link rel="icon" type="image/x-ico" href="Css/CapitalCompassLogo2.ico" />
     <link rel="stylesheet" href="ol.css" type="text/css" />
     <link href="Css/Homepage.css" type="text/css" rel="stylesheet">
     <link href="https://unpkg.com/pattern.css" rel="stylesheet">
@@ -19,12 +19,21 @@
             height: 100%;
             width: 100%;
         }
+        #invert{
+            z-index: 1;
+            opacity: 0.5;
+            backdrop-filter: invert(100%) saturate(50%) hue-rotate(200deg);
+            pointer-events: none;
+            user-select: none;
+            transition: 0.5s;
+        }
         #map .ol-zoom{
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(10px);
             box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
             top:4em;
             left: 0.8em;
+            transition: 0.5s;
         }
         #map .ol-zoom-in{
             background: rgb(255, 255, 255);
@@ -40,6 +49,7 @@
             box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
             top:7.6em;
             left: 0.8em;
+            transition: 0.5s;
         }
         #map .ol-zoomslider-thumb{
             background: rgb(255, 255, 255);
@@ -99,18 +109,20 @@
     <script src="ToolsPackage/EditMode.js" defer="defer" type="text/javascript"></script>
     <title id="html_title">首都地图</title>
 </head>
+
 <body class="pattern-cross-dots-xl">
-<div id="Title_Nav">
+<div style="position: absolute;width: 100%;height: 100%" id="invert"></div>
+<div id="Title_Nav" class="_tran">
     <div class="Title_Nav_Inner">
         <div class="Title_Nav_Inner_Content" style="justify-content: left;">
             <!--<img src="Css/CapitalCompassLogo.ico" class="Title_Img" alt=""><!-->
             <p class="Title_Content" style=";user-select: none">线上首都 Maps</p>
         </div>
     </div>
-</div>
-<div id="_Msg"><div id="_Msg_Inner"></div></div>
+</div >
+<div id="_Msg" class="_tran"><div id="_Msg_Inner"></div></div>
 
-<div id="_Information" style="">
+<div id="_Information" class="_tran" style="">
         <div id="Information_Inner">
                         <div style="width: 100%;height: 100%">
                               <p class="Information_Inner_text1">'+a.title+'</p>
@@ -121,7 +133,7 @@
 </div>
 
 <div id="Edit">
-    <div style="position: absolute;z-index: 3;align-items: center;height: 20em;min-width:26em ;width: 40%;border-radius: 0.4em;background: rgba(43,43,43,1);overflow: hidden">
+    <div style="position: absolute;z-index: 3;align-items: center;height: 20em;min-width:26em ;width: 40%;border-radius: 0.6em;background: rgba(43,43,43,1);overflow: hidden">
         <div style="transition: 0.2s;display: flex;height: 2.6em;background: #4b8c49" id="EditColor_1">
             <div style="display: flex;width: 50%;height: 100%"></div>
             <div style="display: flex;justify-content: right;align-items: center;width: 50%;height: 100%">
@@ -182,11 +194,21 @@
                     <p style="align-items: center;font-size: 0.8em;color: #ffffff;font-weight: bold;user-select: none">保存坐标</p>
                 </div>
             </div>
+            <div style="display: flex;width: 10%;min-width: 4em;height: 100%;justify-content: center;flex-direction: column;padding:0 1em">
+                <div style="width: 5em;height: 1.6em;background: #424242;border-radius:0.4em;display: flex;justify-content: center;align-items: center;cursor: pointer" onclick="ChangeColourMode()">
+                    <p style="align-items: center;font-size: 0.8em;color: #ffffff;font-weight: bold;user-select: none" id="invert_text">深夜模式</p>
+                </div>
+            </div>
+            <div id="_tran_Button" style="visibility: hidden;display: flex;width: 10%;min-width: 4em;height: 100%;justify-content: center;flex-direction: column;padding:0 1em">
+                <div id="_tran_Button_inner" style="transition: 0.3s;width: 2em;height: 1.6em;background: #424242;border-radius:0.4em;display: flex;justify-content: center;align-items: center;cursor: pointer">
+                    <p style="align-items: center;font-size: 0.8em;color: #ffffff;font-weight: bold;user-select: none">↓</p>
+                </div>
+            </div>
         </div>
     </div>
     <div style="position: absolute;z-index: 2;height: 100%;width: 100%" id="CloseEdit" onclick="CloseEdit()"></div>
 </div>
-<div class="EditMode" style="position: absolute;z-index: 5;right:0.8em;top: 4em;">
+<div class="EditMode _tran" style="position: absolute;z-index: 5;right:0.8em;top: 4em;">
     <div class="EditModei" id="EditColor_2" style="transition: 0.2s;height: 2.6em;width: 2.6em;border-radius: 1.3em;cursor: pointer" onclick="OpenEdit()">
         <p id="EditModei_text" style="align-items: center;font-weight: bold;color: white;user-select: none">?</p>
     </div>
@@ -214,7 +236,7 @@
         layers: [
             new ol.layer.Tile({
                 source:new ol.source.TileImage({
-                    attributions:'<p>来源：首都公式(©Copyright-全港市 芝港区浪角)-最近更新于：220913</p>',
+                    attributions:'<p>来源：首都公式(©Copyright-全港市 芝港区浪角)-最近更新于：220930</p>',
                     url:'Maps/Tile/{z}/{y},{x}.png',
                 })
             }),

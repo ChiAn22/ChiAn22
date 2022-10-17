@@ -1539,6 +1539,84 @@ var C3_EastChi= {
     content: Content,
 }
 C3_EastChi.content(C3_EastChi);
+    var C4_NewChisan= {
+        title:'新芝山',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[392.693724236731,252.1080506664956],
+        minZoom:3.6,
+        content: Content,
+    }
+    C4_NewChisan.content(C4_NewChisan);
+    var C4_Lydilia= {
+        title:'里底利亚',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[406.6186564582521,224.9930863885266],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_Lydilia.content(C4_Lydilia);
+    var C4_JiangGuei= {
+        title:'江癸',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[370.0611416656635,235.75248725361243],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_JiangGuei.content(C4_JiangGuei);
+    var C4_SouthTinnan= {
+        title:'南楴南',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[368.4932632508581,262.57954521377644],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_SouthTinnan.content(C4_SouthTinnan);
+    var C4_NorthMufu= {
+        title:'北慕福',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[426.52126647801776,204.50120953085184],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_NorthMufu.content(C4_NorthMufu);
+    var C4_Thaizhan= {
+        title:'台盏',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[422.3529753807878,265.2390326860696],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_Thaizhan.content(C4_Thaizhan);
+    var C4_West_TimesRd= {
+        title:'西时代路',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[446.3659275421306,256.76140131158303],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_West_TimesRd.content(C4_West_TimesRd);
+
 var C3_Ridai= {
     title:'里代',
     fontSize:'14px',
@@ -1550,6 +1628,96 @@ var C3_Ridai= {
     content: Content,
 }
 C3_Ridai.content(C3_Ridai);
+    var C4_TimesRd= {
+        title:'时代路',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[484.92532556632557,270.0337610686958],
+        minZoom:3.6,
+        content: Content,
+    }
+    C4_TimesRd.content(C4_TimesRd);
+    var C4_CentralCityOfRidai= {
+        title:'里代都圈',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[464.1955228911382,275.04815861739155],
+        minZoom:3.6,
+        content: Content,
+    }
+    C4_CentralCityOfRidai.content(C4_CentralCityOfRidai);
+    var C4_BamWahRd= {
+        title:'班瓦路',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[475.1675726240604,247.0084501301299],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_BamWahRd.content(C4_BamWahRd);
+    var C4_MonetRd= {
+        title:'莫奈路',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[488.8826406034168,229.9408320682156],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_MonetRd.content(C4_MonetRd);
+    var C4_BelleshRd= {
+        title:'彼利什路',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[450.1756686475074,232.22667673144167],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_BelleshRd.content(C4_BelleshRd);
+    var C4_Tugva= {
+        title:'图各瓦山',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[509.91241615565946,258.43769669907454],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_Tugva.content(C4_Tugva);
+    var C4_IzzoRd= {
+        title:'伊卓路',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[489.3398025602177,288.30607045315054],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_IzzoRd.content(C4_IzzoRd);
+    var C4_HillSt= {
+        title:'后坪大街',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[518.0514510286476,243.9575141561307],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_HillSt.content(C4_HillSt);
+
+
 var C3_Somonpail= {
     title:'松门湃意',
     fontSize:'14px',
@@ -1561,6 +1729,73 @@ var C3_Somonpail= {
     content: Content,
 }
 C3_Somonpail.content(C3_Somonpail);
+    var C4_XianZhong= {
+        title:'县中',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[507.6441562564703,208.80017090699837],
+        minZoom:3.6,
+        content: Content,
+    }
+    C4_XianZhong.content(C4_XianZhong);
+    var C4_YoungHa= {
+        title:'永和',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[562.1954234497548,190.0530254732601],
+        minZoom:3.6,
+        content: Content,
+    }
+    C4_YoungHa.content(C4_YoungHa);
+    var C4_Hanafall_St= {
+        title:'落花弄',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[484.88607350951753,197.19646004090436],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_Hanafall_St.content(C4_Hanafall_St);
+    var C4_PersimmonBridge= {
+        title:'柿子桥',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[470.76152827571775,210.50926809636707],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_PersimmonBridge.content(C4_PersimmonBridge);
+    var C4_NorthLetin= {
+        title:'北乐庭',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[579.249575721852,204.1692802607423],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_NorthLetin.content(C4_NorthLetin);
+    var C4_Hehua_Bridge= {
+        title:'荷花弄',
+        fontSize:'10px',
+        fontWeight:'bold',
+        contentColor:'#909090',
+        outlineColor:'#ffffff',
+        location:[531.5801312267015,199.37943089962184],
+        minZoom:3.8,
+        content: Content,
+    }
+    C4_Hehua_Bridge.content(C4_Hehua_Bridge);
+
 var C3_Kohha= {
     title:'阔厦',
     fontSize:'14px',

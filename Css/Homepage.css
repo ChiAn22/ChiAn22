@@ -145,3 +145,6 @@
     border-radius: 0.4em;
     padding: 0.4em;
 }
+._tran{
+    transition: 0.5s;
+}
