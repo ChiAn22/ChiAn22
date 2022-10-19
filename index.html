@@ -14,6 +14,7 @@
         *{
             padding: 0;
             margin: 0;
+            box-sizing: content-box;
         }
         .map {
             height: 100%;
@@ -31,7 +32,7 @@
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(10px);
             box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
-            top:4em;
+            top:5.8em;
             left: 0.8em;
             transition: 0.5s;
         }
@@ -47,7 +48,7 @@
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(10px);
             box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
-            top:7.6em;
+            top:9.4em;
             left: 0.8em;
             transition: 0.5s;
         }
@@ -71,7 +72,7 @@
         #map .ol-rotate{
             left:0.8em;
             right: unset;
-            top:20.8em;
+            top:22.6em;
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(10px);
             text-shadow: none;
@@ -112,14 +113,23 @@
 
 <body class="pattern-cross-dots-xl">
 <div style="position: absolute;width: 100%;height: 100%" id="invert"></div>
-<div id="Title_Nav" class="_tran">
-    <div class="Title_Nav_Inner">
-        <div class="Title_Nav_Inner_Content" style="justify-content: left;">
-            <!--<img src="Css/CapitalCompassLogo.ico" class="Title_Img" alt=""><!-->
-            <p class="Title_Content" style=";user-select: none">线上首都 Maps</p>
+<div style="width: 100%;height: 10%;position: absolute;padding: 0.8em;box-sizing: border-box">
+    <div id="Title_Nav" class="_tran">
+        <div class="Title_Nav_Inner">
+            <div class="Title_Nav_Inner_Content" style="justify-content: left;">
+                <!--<img src="Css/CapitalCompassLogo.ico" class="Title_Img" alt=""><!-->
+                <p class="Title_Content" style=";user-select: none">线上首都 Maps</p>
+            </div>
+
         </div>
-    </div>
-</div >
+        <div style="display: flex;justify-items: right;align-items: center;">
+            <div id="QR-Code" style="background: #FFFFFF;border-radius: 0.2em;margin-right: 0.6em;display: flex;justify-items: right;align-items: center;height: 3em;width: 3em;overflow: hidden">
+                <img alt="QR-Code" src="Css/QR-Code.png" style="height: 100%;width: auto;right: 0">
+            </div>
+        </div>
+    </div >
+</div>
+
 <div id="_Msg" class="_tran"><div id="_Msg_Inner"></div></div>
 
 <div id="_Information" class="_tran" style="">
@@ -133,7 +143,7 @@
 </div>
 
 <div id="Edit">
-    <div style="position: absolute;z-index: 3;align-items: center;height: 20em;min-width:26em ;width: 40%;border-radius: 0.6em;background: rgba(43,43,43,1);overflow: hidden">
+    <div style="position: absolute;z-index: 3;align-items: center;height: 20em;min-width:24em ;width: 40%;border-radius: 0.6em;background: rgba(43,43,43,1);overflow: hidden">
         <div style="transition: 0.2s;display: flex;height: 2.6em;background: #4b8c49" id="EditColor_1">
             <div style="display: flex;width: 50%;height: 100%"></div>
             <div style="display: flex;justify-content: right;align-items: center;width: 50%;height: 100%">
@@ -208,7 +218,7 @@
     </div>
     <div style="position: absolute;z-index: 2;height: 100%;width: 100%" id="CloseEdit" onclick="CloseEdit()"></div>
 </div>
-<div class="EditMode _tran" style="position: absolute;z-index: 5;right:0.8em;top: 4em;">
+<div class="EditMode _tran" style="position: absolute;z-index: 5;right:0.8em;top: 5.8em;">
     <div class="EditModei" id="EditColor_2" style="transition: 0.2s;height: 2.6em;width: 2.6em;border-radius: 1.3em;cursor: pointer" onclick="OpenEdit()">
         <p id="EditModei_text" style="align-items: center;font-weight: bold;color: white;user-select: none">?</p>
     </div>
