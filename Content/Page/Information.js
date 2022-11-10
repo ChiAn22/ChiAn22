@@ -21,6 +21,9 @@ function Init(){
             case "Main":
                 text[i]=CreatList('li_Main','<div style="line-height: 2em;"><p style="font-size: 0.6em">'+obj.CI.Url.Main[i].Content+'</p></div>');
                 break;
+            case "Title":
+                text[i]=CreatList('li_Title','<div style="line-height: 2em;"><p style="font-size: 1em;font-family: Font-B;font-weight: bold">'+obj.CI.Url.Main[i].Content+'</p></div>');
+                break;
             case "Image":
                 text[i]=CreatList('li_Image','<div><br><img alt="" src="'+obj.CI.Url.Main[i].Content+'" style="width: 100%;height: auto"><br></div>');
                 break;

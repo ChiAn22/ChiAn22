@@ -35,6 +35,7 @@ function Api_Show(){
         + '<p style="font-family: Font-L">本属性用于提供Point.CI.Url创建词条主页时所需要的信息，数组内只能被放入对象。</p><br>'
         + '<p style="font-family: Font-L">本属性被放入的对象通常包含键值：{Type:&lt;string&gt;}与{Content:&lt;string&gt;}</p><br>'
         + '<p style="font-family: Font-L">类型[Main,Content:&lt;string&gt;]：基础文本。</p><br>'
+        + '<p style="font-family: Font-L">类型[Title,Content:&lt;string&gt;]：基础标题。</p><br>'
         + '<p style="font-family: Font-L">类型[Image,Content:&lt;string(图像来自内容根的路径)&gt;]：基础图片。</p><br>'
         + '<p style="font-family: Font-L">类型[Audio,Content:&lt;string(嵌入代码)&gt;]：基础声音。</p><br>'
         + '<p style="font-family: Font-L">类型[br]：基础换行。当类型为“br”时，可忽略Content键值。</p><br>'

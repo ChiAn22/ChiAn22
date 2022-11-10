@@ -724,6 +724,106 @@ var MainPackage_Icon={
         }
         Metro_C2_027_ER.icoContent(Metro_C2_027_ER);
 
+        //
+var Metro_C1_JZP= {
+    title:'九洲堡',
+    fontSize:'14px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[419.2,64.9],
+    minZoom:4.2,
+    offsetX: 13,
+    icoScale:0.07,
+    icoSrc:MainPackage_Icon.Metro,
+    icoContent: IcoContent,
+}
+Metro_C1_JZP.icoContent(Metro_C1_JZP);
+var Metro_C1_HY= {
+    title:'香橼',
+    fontSize:'14px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[510.0,75.9],
+    minZoom:4.2,
+    offsetX: 13,
+    icoScale:0.07,
+    icoSrc:MainPackage_Icon.Metro,
+    icoContent: IcoContent,
+}
+Metro_C1_HY.icoContent(Metro_C1_HY);
+var Metro_C1_JD= {
+    title:'江代',
+    fontSize:'14px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[384.0,182.4],
+    minZoom:4.2,
+    offsetX: 13,
+    icoScale:0.07,
+    icoSrc:MainPackage_Icon.Metro,
+    icoContent: IcoContent,
+}
+Metro_C1_JD.icoContent(Metro_C1_JD);
+var Metro_C1_SMB_W= {
+    title:'西松门桥',
+    fontSize:'14px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[422.1,133.6],
+    minZoom:4.2,
+    offsetX: 13,
+    icoScale:0.07,
+    icoSrc:MainPackage_Icon.Metro,
+    icoContent: IcoContent,
+}
+Metro_C1_SMB_W.icoContent(Metro_C1_SMB_W);
+var Metro_C1_ECN= {
+    title:'重東',
+    fontSize:'14px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[436.2,115.7],
+    minZoom:4.2,
+    offsetX: 13,
+    icoScale:0.07,
+    icoSrc:MainPackage_Icon.Metro,
+    icoContent: IcoContent,
+}
+Metro_C1_ECN.icoContent(Metro_C1_ECN);
+var Metro_C1_SMB_E= {
+    title:'東松门桥',
+    fontSize:'14px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[451.4,129.8],
+    minZoom:4.2,
+    offsetX: 13,
+    icoScale:0.07,
+    icoSrc:MainPackage_Icon.Metro,
+    icoContent: IcoContent,
+}
+Metro_C1_SMB_E.icoContent(Metro_C1_SMB_E);
+var Metro_C1_TheCentralFieldOfAirportArrivalAera= {
+    title:'空港心',
+    fontSize:'14px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[469.5,139.3],
+    minZoom:4.2,
+    offsetX: 13,
+    icoScale:0.07,
+    icoSrc:MainPackage_Icon.Metro,
+    icoContent: IcoContent,
+}
+Metro_C1_TheCentralFieldOfAirportArrivalAera.icoContent(Metro_C1_TheCentralFieldOfAirportArrivalAera);
+
 //注意内容
 var Alert_Chisan_001= {
     title:'水位预警',

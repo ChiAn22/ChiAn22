@@ -2131,6 +2131,22 @@ var Point_ChisanTemple_01= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'Episode：芝山乐宁',
+        ConciseIntroduce:'误入寺廟深处，在仆人“乐乐”的引导下，体验生命中仅一次的芝山之行。',
+        Url:{
+            Name:'Point_ChisanTemple_01',
+            Introduce:'',
+            Date:'2022/11/10',
+            OriginalWriter:'遗失在芝港的笔记簿',
+            Main:[
+                {type:'Main', Content:'内容待填充。',},
+                {type:'Hashtag',Content: ['深游全港','遗失在芝港的笔记簿']}
+            ],
+            Hashtag:'',
+        },
+        For:'Episode：Lost in Chisan',
+    }
 }
 Point_ChisanTemple_01.pointContent(Point_ChisanTemple_01);
 
@@ -2535,6 +2551,22 @@ var Point_YuhaiTemple= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'Episode：烛光',
+        ConciseIntroduce:'这是关于梦主的故事，相传重宁中地一带，神秘的梦主居住在毓海寺中。',
+        Url:{
+            Name:'Point_YuhaiTempl',
+            Introduce:'',
+            Date:'2022/11/10',
+            OriginalWriter:'遗失在空港的笔记簿',
+            Main:[
+                {type:'Main', Content:'内容待填充。',},
+                {type:'Hashtag',Content: ['深游全港','遗失在芝港的笔记簿']}
+            ],
+            Hashtag:'',
+        },
+        For:'Episode：Candlelight',
+    }
 }
 Point_YuhaiTemple.pointContent(Point_YuhaiTemple);
 
@@ -3912,6 +3944,12 @@ var Point_ONDE_RecordingStudio= {
     minZoom:5.0,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'ONDE Entertainment',
+        ConciseIntroduce:'ONDE娱乐公司是ON Ent.(京川)旗下子公司。',
+        Url:publicInfo.ONDE_Ent,
+        For:'收录在《藝術時代》',
+    }
 }
 Point_ONDE_RecordingStudio.pointContent(Point_ONDE_RecordingStudio);
 
@@ -3938,6 +3976,12 @@ var Point_ONDE_Ent_Bellesh= {
     minZoom:6.4,
     pointContent: PointContent,
     pointSize:4,
+    CI:{
+        Title:'ONDE Entertainment',
+        ConciseIntroduce:'京川ON(Ent.)旗下子公司。',
+        Url:publicInfo.ONDE_Ent,
+        For:'收录在《藝術時代》',
+    }
 }
 Point_ONDE_Ent_Bellesh.pointContent(Point_ONDE_Ent_Bellesh);
 
@@ -4018,4 +4062,33 @@ var Point_Bellesh_Futaba_Speaker= {
     pointSize:4,
 }
 Point_Bellesh_Futaba_Speaker.pointContent(Point_Bellesh_Futaba_Speaker);
+
+var Point_ChinSwee_Temple= {
+    title:'清水寺',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[533.352446696676,280.34304163309923],
+    minZoom:4.6,
+    pointContent: PointContent,
+    pointSize:4,
+    CI:{
+        Title:'Episode：清水',
+        ConciseIntroduce:'关于清水寺一家传承的故事，清水寺是跨时代前，皇室出游芝山时所修筑的庙宇。',
+        Url:{
+            Name:'Point_ChinSwee_Temple',
+            Introduce:'',
+            Date:'2022/11/10',
+            OriginalWriter:'遗失在双庭的笔记簿',
+            Main:[
+                {type:'Main', Content:'内容待填充。',},
+                {type:'Hashtag',Content: ['深游全港','遗失在芝港的笔记簿']}
+            ],
+            Hashtag:'',
+        },
+        For:'Episode：Chin Swee',
+    }
+}
+Point_ChinSwee_Temple.pointContent(Point_ChinSwee_Temple);
 

@@ -226,8 +226,10 @@
 </div>
 <p id="info"></p>
 <div id="map" class="map"></div>
+<script type="text/javascript" src="Content/PublicInfo.js"></script>
 <script defer="defer" type="text/javascript" src="Content/ContentType2.js"></script>
 <script defer="defer" type="text/javascript" src="Content/ContentType3.js"></script>
+
 <script defer="defer" type="text/javascript" src="Content/ContentTypePoint.js"></script>
 <script defer="defer" type="text/javascript" src="Content/ContentTypeIco.js"></script>
 <script defer="defer" type="text/javascript" src="Content/ContentTypeCE.js"></script>
@@ -241,13 +243,15 @@
         extent: extent,
         showFullExtent: true,
     });
+
+    var MapTile=new ol.source.TileImage({
+        attributions:'<p>来源：首都公式(©Copyright-全港市 芝港区浪角)-Version：2.1-221110</p>',
+        url:'Maps/Tile/{z}/{y},{x}.png',
+    })
     var map = new ol.Map({
         layers: [
             new ol.layer.Tile({
-                source:new ol.source.TileImage({
-                    attributions:'<p>来源：首都公式(©Copyright-全港市 芝港区浪角)-Version：2.0-221019</p>',
-                    url:'Maps/Tile/{z}/{y},{x}.png',
-                })
+                source:MapTile
             }),
 
         ],
@@ -265,6 +269,10 @@
     });
     let timer=false,timer2=false;
     let info = document.getElementById('info');
+    var LoadCount=0;
+    MapTile.on('tileloadend',function (){
+        LoadCount++;
+    })
     map.on('pointermove',function (event){
         const features = map.getFeaturesAtPixel(event.pixel);
         if (features.length !== 0) {
