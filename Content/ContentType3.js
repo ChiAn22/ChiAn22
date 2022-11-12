@@ -623,12 +623,7 @@ C3_ROCHI.content(C3_ROCHI);
         location:[244.2,95.8],
         minZoom:3.8,
         content: Content,
-        CI:{
-            Title:'芝山繁荣摇篮',
-            ConciseIntroduce:'旧汐是旧时代芝山停泊船舟规模最大的码头，一直沿用到现代实物港新港建立',
-            Url:'',
-            For:'收录在《漫游芝山》',
-        }
+        CI:pointInfo.C4_OldShitin
     }
     C4_OldShitin.content(C4_OldShitin);
     var C4_Rochi= {
@@ -651,12 +646,7 @@ C3_ROCHI.content(C3_ROCHI);
         location:[202.7,88.8],
         minZoom:3.8,
         content: Content,
-        CI:{
-            Title:'潮汐寺(水廪寺)',
-            ConciseIntroduce:'目睹巨浪扑打寺前水梁，向天空献上无瑕的敬意。',
-            Url:'',
-            For:'收录在《漫游芝山》',
-        }
+        CI:pointInfo.C4_TideTemple
     }
     C4_TideTemple.content(C4_TideTemple);
 
