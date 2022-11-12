@@ -422,12 +422,7 @@ var Point_CapitalOfficialOfChisan= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'全港最高都政机关',
-        ConciseIntroduce:'Howdy! Welcome to Economic capital.You are now live it too choicest!',
-        Url:'',
-        For:'首都公式',
-    }
+    CI:pointInfo.Point_CapitalOfficialOfChisan
 }
 Point_CapitalOfficialOfChisan.pointContent(Point_CapitalOfficialOfChisan);
 
@@ -572,12 +567,7 @@ var Point_RuinedTemple= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'伤痛的回忆：北庭馆大火',
-        ConciseIntroduce:'这场天灾摧毁了无数家庭，破坏了无价的文化遗产。',
-        Url:'',
-        For:'收录在《漫游芝山》',
-    }
+    CI:pointInfo.Point_RuinedTemple
 }
 Point_RuinedTemple.pointContent(Point_RuinedTemple);
 
@@ -994,13 +984,7 @@ var Point_SomonreninPark= {
     minZoom:4.8,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'总理的痕迹',
-        ConciseIntroduce:'唯一的染色人工湖泊，灵感来自于总理的画作《落日桃湖》。',
-        Url:'',
-        For:'收录在《漫游芝山》',
-        Width:'20em',
-    },
+    CI:pointInfo.Point_SomonreninPark
 }
 Point_SomonreninPark.pointContent(Point_SomonreninPark);
 
@@ -1262,12 +1246,7 @@ var Point_VisionChisan01= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'最繁华：大芝港',
-        ConciseIntroduce:'在滨江之城中迷失，或仰视旧时代的威严廟宇。',
-        Url:'',
-        For:'收录在《俯见芝山》',
-    },
+    CI:pointInfo.Point_VisionChisan01
 }
 Point_VisionChisan01.pointContent(Point_VisionChisan01);
 
@@ -1450,12 +1429,7 @@ var Point_QueCityPark= {
     minZoom:5.2,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'雨吹神雀',
-        ConciseIntroduce:'诞生于旧时代，传说神雀曾筑巢与此地，为人民带来天降甘霖。',
-        Url:'',
-        For:'收录在《俯见芝山》',
-    },
+    CI:pointInfo.Point_QueCityPark
 }
 Point_QueCityPark.pointContent(Point_QueCityPark);
 
@@ -1651,12 +1625,7 @@ var Point_ThaichiTemple= {
     minZoom:4.8,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'旧时代建筑大赏：苔芝正寺',
-        ConciseIntroduce:'屹立于涯边的古代寺庙，在无数风雨中为芝山人民带来丰收与好运。',
-        Url:'',
-        For:'收录在《俯见芝山》',
-    },
+    CI:pointInfo.Point_ThaichiTemple,
 }
 Point_ThaichiTemple.pointContent(Point_ThaichiTemple);
 
@@ -2230,12 +2199,7 @@ var Point_Tintown_Hurilou= {
     minZoom:5.6,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'店主的建议',
-        ConciseIntroduce:'槲栎楼没有狐狸摸，因为本店铺是民营茶舍。',
-        Url:'',
-        For:'收录在《俯见芝山》',
-    },
+    CI:pointInfo.Point_Tintown_Hurilou
 }
 Point_Tintown_Hurilou.pointContent(Point_Tintown_Hurilou);
 
@@ -2445,12 +2409,7 @@ var Point_Fodaoci= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'佛道祠：文化在融合',
-        ConciseIntroduce:'佛道两家向来势不两立，设计师巧妙地以此为灵感源泉。',
-        Url:'',
-        For:'收录在《未来述白》',
-    }
+    CI:pointInfo.Point_Fodaoci
 }
 Point_Fodaoci.pointContent(Point_Fodaoci);
 
@@ -2477,22 +2436,7 @@ var Point_YuhaiTemple= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'Episode：烛光',
-        ConciseIntroduce:'这是关于梦主的故事，相传重宁中地一带，神秘的梦主居住在毓海寺中。',
-        Url:{
-            Name:'Point_YuhaiTempl',
-            Introduce:'',
-            Date:'2022/11/10',
-            OriginalWriter:'遗失在空港的笔记簿',
-            Main:[
-                {type:'Main', Content:'内容待填充。',},
-                {type:'Hashtag',Content: ['深游全港','遗失在芝港的笔记簿']}
-            ],
-            Hashtag:'',
-        },
-        For:'Episode：Candlelight',
-    }
+    CI:pointInfo.Point_YuhaiTemple
 }
 Point_YuhaiTemple.pointContent(Point_YuhaiTemple);
 
@@ -3197,13 +3141,7 @@ var Point_YuhaiTemple_CandlelightField= {
     minZoom:5.0,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'最梦幻：行步烛场',
-        ConciseIntroduce:'据说点亮寺内烛光的每一位信者，都会得到梦主的保佑，而慷慨的梦主会将信者梦中所发生的事物带入现实。',
-        Url:'',
-        For:'收录在《未来述白》',
-        Width:'20em'
-    },
+    CI:pointInfo.Point_YuhaiTemple_CandlelightField,
 }
 Point_YuhaiTemple_CandlelightField.pointContent(Point_YuhaiTemple_CandlelightField);
 
@@ -3830,12 +3768,7 @@ var Point_ONDE_RecordingStudio= {
     minZoom:5.0,
     pointContent: PointContent,
     pointSize:4,
-    CI:{
-        Title:'ONDE Entertainment',
-        ConciseIntroduce:'ONDE娱乐公司是ON Ent.(京川)旗下子公司。',
-        Url:publicInfo.ONDE_Ent,
-        For:'收录在《藝術時代》',
-    }
+    CI:pointInfo.Point_ONDE_RecordingStudio
 }
 Point_ONDE_RecordingStudio.pointContent(Point_ONDE_RecordingStudio);
 
