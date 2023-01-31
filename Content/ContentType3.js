@@ -623,7 +623,6 @@ C3_ROCHI.content(C3_ROCHI);
         location:[244.2,95.8],
         minZoom:3.8,
         content: Content,
-        CI:pointInfo.C4_OldShitin
     }
     C4_OldShitin.content(C4_OldShitin);
     var C4_Rochi= {
@@ -646,7 +645,6 @@ C3_ROCHI.content(C3_ROCHI);
         location:[202.7,88.8],
         minZoom:3.8,
         content: Content,
-        CI:pointInfo.C4_TideTemple
     }
     C4_TideTemple.content(C4_TideTemple);
 
