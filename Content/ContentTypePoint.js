@@ -1,3 +1,5 @@
+alert('test');
+
 function PointContent(a){
     var mainFeature = new ol.Feature({
         geometry: new ol.geom.Point(a.location),
