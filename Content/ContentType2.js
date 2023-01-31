@@ -16,6 +16,7 @@ function Content(a){
     var vectorLayer = new ol.layer.Vector({
         source: vectorSource,
         minZoom:a.minZoom,
+        maxZoom:a.maxZoom,
     });
 
     map.addLayer(vectorLayer);
@@ -99,6 +100,66 @@ var C2_HOPE= {
     content: Content,
 }
 C2_HOPE.content(C2_HOPE);
+
+var C2_Dehua= {
+    title:'德化',
+    fontSize:'12px',
+    fontWeight:'bold',
+    contentColor:'#909090',
+    outlineColor:'#ffffff',
+    location:[37,544],
+    content: Content,
+}
+C2_Dehua.content(C2_Dehua);
+
+var C2_Monwa= {
+    title:'门湾',
+    fontSize:'12px',
+    fontWeight:'bold',
+    contentColor:'#909090',
+    outlineColor:'#ffffff',
+    location:[926,243],
+    content: Content,
+}
+C2_Monwa.content(C2_Monwa);
+
+var C2_Lovaton= {
+    title:'落瓦屯',
+    fontSize:'12px',
+    fontWeight:'bold',
+    contentColor:'#909090',
+    outlineColor:'#ffffff',
+    location:[702,496],
+    content: Content,
+}
+C2_Lovaton.content(C2_Lovaton);
+
+var special_NW_Area= {
+    title:'西北天际',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#909090',
+    outlineColor:'#ffffff',
+    minZoom:2.8,
+    maxZoom: 4,
+    location:[49,426],
+    content: Content,
+}
+special_NW_Area.content(special_NW_Area);
+
+var special_NE_Area= {
+    title:'東北天际',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#909090',
+    outlineColor:'#ffffff',
+    minZoom:2.8,
+    maxZoom: 4,
+    location:[653,475],
+    content: Content,
+}
+special_NE_Area.content(special_NE_Area);
+
 
 var special_ChisanRiver_Estuary= {
     title:'芝江入海口',

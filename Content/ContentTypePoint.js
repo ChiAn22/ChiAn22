@@ -2,9 +2,7 @@ function PointContent(a){
     var mainFeature = new ol.Feature({
         geometry: new ol.geom.Point(a.location),
         zoomValue:a.minZoom,
-        /*  1-1
         CI:a.CI,
-        */
     });
 
     var mainFeaturePoint = new ol.Feature({
