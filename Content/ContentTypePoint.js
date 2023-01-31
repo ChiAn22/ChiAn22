@@ -87,6 +87,8 @@ var Point_Chisantin= {
 }
 Point_Chisantin.pointContent(Point_Chisantin);
 
+alert('aa');
+
 var Point_ChisanSiyi= {
     title:'芝山寺坮小学',
     fontSize:'10px',
