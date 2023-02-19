@@ -1,8 +1,8 @@
-
 function PointContent(a){
     var mainFeature = new ol.Feature({
         geometry: new ol.geom.Point(a.location),
         zoomValue:a.minZoom,
+        CI:a.CI||"",
     });
 
     var mainFeaturePoint = new ol.Feature({
@@ -291,6 +291,7 @@ var Point_AnCompany01= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_AnCompany01||""
 }
 Point_AnCompany01.pointContent(Point_AnCompany01);
 
@@ -421,6 +422,7 @@ var Point_CapitalOfficialOfChisan= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_CapitalOfficialOfChisan
 }
 Point_CapitalOfficialOfChisan.pointContent(Point_CapitalOfficialOfChisan);
 
@@ -512,6 +514,7 @@ var Point_AreaLeadersOfChisan= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_AreaLeadersOfChisan||"",
 }
 Point_AreaLeadersOfChisan.pointContent(Point_AreaLeadersOfChisan);
 
@@ -564,6 +567,7 @@ var Point_RuinedTemple= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_RuinedTemple
 }
 Point_RuinedTemple.pointContent(Point_RuinedTemple);
 
@@ -980,6 +984,7 @@ var Point_SomonreninPark= {
     minZoom:4.8,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_SomonreninPark
 }
 Point_SomonreninPark.pointContent(Point_SomonreninPark);
 
@@ -1188,6 +1193,7 @@ var Point_MainTempleOfCET= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_MainTempleOfCET||"",
 }
 Point_MainTempleOfCET.pointContent(Point_MainTempleOfCET);
 
@@ -1240,6 +1246,7 @@ var Point_VisionChisan01= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_VisionChisan01
 }
 Point_VisionChisan01.pointContent(Point_VisionChisan01);
 
@@ -1422,6 +1429,7 @@ var Point_QueCityPark= {
     minZoom:5.2,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_QueCityPark
 }
 Point_QueCityPark.pointContent(Point_QueCityPark);
 
@@ -1617,6 +1625,7 @@ var Point_ThaichiTemple= {
     minZoom:4.8,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_ThaichiTemple,
 }
 Point_ThaichiTemple.pointContent(Point_ThaichiTemple);
 
@@ -2059,6 +2068,7 @@ var Point_ChisanTemple_01= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_ChisanTemple_01||""
 }
 Point_ChisanTemple_01.pointContent(Point_ChisanTemple_01);
 
@@ -2189,6 +2199,7 @@ var Point_Tintown_Hurilou= {
     minZoom:5.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_Tintown_Hurilou
 }
 Point_Tintown_Hurilou.pointContent(Point_Tintown_Hurilou);
 
@@ -2332,6 +2343,7 @@ var Point_JadeGarden_Hall_Ru= {
     minZoom:5.2,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_JadeGarden_Hall_Ru||""
 }
 Point_JadeGarden_Hall_Ru.pointContent(Point_JadeGarden_Hall_Ru);
 
@@ -2397,6 +2409,7 @@ var Point_Fodaoci= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_Fodaoci
 }
 Point_Fodaoci.pointContent(Point_Fodaoci);
 
@@ -2423,6 +2436,7 @@ var Point_YuhaiTemple= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_YuhaiTemple
 }
 Point_YuhaiTemple.pointContent(Point_YuhaiTemple);
 
@@ -2787,6 +2801,7 @@ var Point_Gutyan_TemplePark= {
     minZoom:5.0,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_Gutyan_TemplePack||""
 }
 Point_Gutyan_TemplePark.pointContent(Point_Gutyan_TemplePark);
 
@@ -3112,6 +3127,7 @@ var Point_ChisanJiangbu= {
     minZoom:4.4,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_ChisanJiangbu||"",
 }
 Point_ChisanJiangbu.pointContent(Point_ChisanJiangbu);
 
@@ -3125,6 +3141,7 @@ var Point_YuhaiTemple_CandlelightField= {
     minZoom:5.0,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_YuhaiTemple_CandlelightField,
 }
 Point_YuhaiTemple_CandlelightField.pointContent(Point_YuhaiTemple_CandlelightField);
 
@@ -3502,6 +3519,7 @@ var Point_Marina_Lydilia= {
     minZoom:5.0,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_Marina_Lydilia||"",
 }
 Point_Marina_Lydilia.pointContent(Point_Marina_Lydilia);
 
@@ -3736,6 +3754,7 @@ var Point_AreaLeadersOfChongnin= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_AreaLeadersOfChongnin||"",
 }
 Point_AreaLeadersOfChongnin.pointContent(Point_AreaLeadersOfChongnin);
 
@@ -3749,6 +3768,7 @@ var Point_ONDE_RecordingStudio= {
     minZoom:5.0,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_ONDE_RecordingStudio
 }
 Point_ONDE_RecordingStudio.pointContent(Point_ONDE_RecordingStudio);
 
@@ -3775,6 +3795,7 @@ var Point_ONDE_Ent_Bellesh= {
     minZoom:6.4,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_ONDE_Ent_Bellesh||""
 }
 Point_ONDE_Ent_Bellesh.pointContent(Point_ONDE_Ent_Bellesh);
 
@@ -3866,6 +3887,215 @@ var Point_ChinSwee_Temple= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
+    CI:pointInfo.Point_ChinSwee_Temple||""
 }
 Point_ChinSwee_Temple.pointContent(Point_ChinSwee_Temple);
+
+var Point_BamWah_Park= {
+    title:'班瓦羅德公園',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#62af40',
+    outlineColor:'#ffffff',
+    location:[465.77096069045774,248.5937873761627],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BamWah_Park.pointContent(Point_BamWah_Park);
+
+var Point_BamWah_BU_GraduateCampus= {
+    title:'Bamwah University - \nMinstrel Graduate Campus',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6695cf',
+    outlineColor:'#ffffff',
+    location:[476.3103797382982,241.92534261310908],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BamWah_BU_GraduateCampus.pointContent(Point_BamWah_BU_GraduateCampus);
+
+var Point_Portugal_Culture_Center= {
+    title:'Portugal Culture Institute',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[469.00545450388483,242.33657938636824],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Portugal_Culture_Center.pointContent(Point_Portugal_Culture_Center);
+
+var Point_BamWah_Park_LeonGarden= {
+    title:'Leon Garden',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b584d',
+    outlineColor:'#ffffff',
+    location:[469.8228854458427,246.53998290709842],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BamWah_Park_LeonGarden.pointContent(Point_BamWah_Park_LeonGarden);
+
+var Point_BamWah_Park_Baseball_League= {
+    title:'Bamwah Int.\nBaseball League',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[462.8999856816256,252.67470335997],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BamWah_Park_Baseball_League.pointContent(Point_BamWah_Park_Baseball_League);
+
+var Point_Bellesh_Capital_Spectrum= {
+    title:'Spectrum Co.',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[465.2724069755481,228.90902801191842],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Bellesh_Capital_Spectrum.pointContent(Point_Bellesh_Capital_Spectrum);
+
+var Point_Boombap_Music_MakerStudio= {
+    title:'Boombap Music Studio',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[496.96119417482936,249.1843477420393],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Boombap_Music_MakerStudio.pointContent(Point_Boombap_Music_MakerStudio);
+
+var Point_WaterFall_Entertainment= {
+    title:'WaterFall Ent.',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[497.82403730639305,242.52305230888217],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_WaterFall_Entertainment.pointContent(Point_WaterFall_Entertainment);
+
+var Point_Yellowish_StreetStore= {
+    title:'Yellowish St. Store',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[497.35187719676816,243.5086442776913],
+    minZoom:5.6,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Yellowish_StreetStore.pointContent(Point_Yellowish_StreetStore);
+
+var Point_Tugva_Streamside_BaB= {
+    title:'Streamside B&B',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[494.45616599745586,241.10277128992314],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Tugva_Streamside_BaB.pointContent(Point_Tugva_Streamside_BaB);
+
+var Point_Neoclassical_Room= {
+    title:'Neoclassical Room',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[460.380649801609,249.8718188344568],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Neoclassical_Room.pointContent(Point_Neoclassical_Room);
+
+var Point_Evangelical_church_Tugva= {
+    title:'Evangelical Church\nTugva',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[492.9697111891789,247.70544747532801],
+    minZoom:5.4,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Evangelical_church_Tugva.pointContent(Point_Evangelical_church_Tugva);
+
+var Point_BamWahCI= {
+    title:'班瓦路首都醫療',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[462.25530017856806,243.64557573939877],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BamWahCI.pointContent(Point_BamWahCI);
+
+var Point_Monet_UrbanPoliceOfCapital= {
+    title:'首都察院',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[480.8711515459021,236.43513789603293],
+    minZoom:5.0,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_Monet_UrbanPoliceOfCapital.pointContent(Point_Monet_UrbanPoliceOfCapital);
+
+var Point_BamWah_UrbanPoliceOfCapital= {
+    title:'首都察院',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[463.43448789595243,256.7721101042276],
+    minZoom:4.8,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_BamWah_UrbanPoliceOfCapital.pointContent(Point_BamWah_UrbanPoliceOfCapital);
+
+var Point_GrandBund_Cigarettes= {
+    title:'Grandbund Cigarettes',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#6b6b6b',
+    outlineColor:'#ffffff',
+    location:[389.4407660871117,211.20458897136942],
+    minZoom:5.2,
+    pointContent: PointContent,
+    pointSize:4,
+}
+Point_GrandBund_Cigarettes.pointContent(Point_GrandBund_Cigarettes);
 

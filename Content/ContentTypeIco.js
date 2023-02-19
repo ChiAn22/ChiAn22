@@ -151,7 +151,7 @@ var MainPackage_Icon={
             icoContent: IcoContent,
         }
         Metro_C1_TGCMAC_E1.icoContent(Metro_C1_TGCMAC_E1);
-        var Metro_C1_TGCMAC_E1= {
+        var Metro_C1_TGCMAC_E2= {
             title:'换乘',
             fontSize:'10px',
             fontWeight:'bold',
@@ -162,7 +162,7 @@ var MainPackage_Icon={
             icoSrc:MainPackage_Icon.Metro_E,
             icoContent: IcoContent,
         }
-        Metro_C1_TGCMAC_E1.icoContent(Metro_C1_TGCMAC_E1);
+        Metro_C1_TGCMAC_E2.icoContent(Metro_C1_TGCMAC_E2);
     var Metro_C1_RC= {
         title:'落芝',
         fontSize:'14px',

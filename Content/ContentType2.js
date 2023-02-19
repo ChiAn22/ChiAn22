@@ -4,6 +4,7 @@ function Content(a){
     var mainFeature = new ol.Feature({
         geometry: new ol.geom.Point(a.location),
         zoomValue:a.minZoom||'SUB',
+        CI:a.CI,
     });
 
     mainFeature.setStyle(createLabelStyle(mainFeature));
