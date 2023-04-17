@@ -84,7 +84,8 @@ var Point_PIO= {
     minZoom:5.6,
     pointSize:4,
     pointContent: PointContent,
-    CI:pointInfo.Point_PIO
+    CI:pointInfo.Point_PIO,
+    data:'1'
 }
 Point_PIO.pointContent(Point_PIO);
 
