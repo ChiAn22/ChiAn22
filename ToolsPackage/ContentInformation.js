@@ -23,6 +23,8 @@ var Information={
                     break;
                 case '收录在《俯见芝山》':ForColour='#462f00'
                     break;
+                case '#PIO':ForColour='#e2992b'
+                    break;
             }
             div.innerHTML='<div style="width: 100%;height: 40%;display: flex">\n' +
                 '        <p style="display: flex;align-items: center;color: black;font-weight: bold;font-size: 1.2em">'+Title+'</p>\n' +
