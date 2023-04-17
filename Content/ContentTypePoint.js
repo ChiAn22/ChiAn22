@@ -2,7 +2,7 @@ function PointContent(a){
     var mainFeature = new ol.Feature({
         geometry: new ol.geom.Point(a.location),
         zoomValue:a.minZoom,
-        CI:a.CI||"",
+        CI:a.CI,
     });
 
     var mainFeaturePoint = new ol.Feature({
@@ -137,6 +137,7 @@ var Point_HenjiangMHS= {
     pointSize:4,
 }
 Point_HenjiangMHS.pointContent(Point_HenjiangMHS);
+
 
 var Point_ShyampooHarbour= {
     title:'香蒲埠头',
@@ -291,7 +292,7 @@ var Point_AnCompany01= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_AnCompany01||""
+    CI:pointInfo.Point_AnCompany01
 }
 Point_AnCompany01.pointContent(Point_AnCompany01);
 
@@ -514,7 +515,7 @@ var Point_AreaLeadersOfChisan= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_AreaLeadersOfChisan||"",
+    CI:pointInfo.Point_AreaLeadersOfChisan,
 }
 Point_AreaLeadersOfChisan.pointContent(Point_AreaLeadersOfChisan);
 
@@ -1193,7 +1194,7 @@ var Point_MainTempleOfCET= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_MainTempleOfCET||"",
+    CI:pointInfo.Point_MainTempleOfCET,
 }
 Point_MainTempleOfCET.pointContent(Point_MainTempleOfCET);
 
@@ -2068,7 +2069,7 @@ var Point_ChisanTemple_01= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_ChisanTemple_01||""
+    CI:pointInfo.Point_ChisanTemple_01
 }
 Point_ChisanTemple_01.pointContent(Point_ChisanTemple_01);
 
@@ -2343,7 +2344,7 @@ var Point_JadeGarden_Hall_Ru= {
     minZoom:5.2,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_JadeGarden_Hall_Ru||""
+    CI:pointInfo.Point_JadeGarden_Hall_Ru
 }
 Point_JadeGarden_Hall_Ru.pointContent(Point_JadeGarden_Hall_Ru);
 
@@ -2801,7 +2802,7 @@ var Point_Gutyan_TemplePark= {
     minZoom:5.0,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_Gutyan_TemplePack||""
+    CI:pointInfo.Point_Gutyan_TemplePack
 }
 Point_Gutyan_TemplePark.pointContent(Point_Gutyan_TemplePark);
 
@@ -3127,7 +3128,7 @@ var Point_ChisanJiangbu= {
     minZoom:4.4,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_ChisanJiangbu||"",
+    CI:pointInfo.Point_ChisanJiangbu,
 }
 Point_ChisanJiangbu.pointContent(Point_ChisanJiangbu);
 
@@ -3519,7 +3520,7 @@ var Point_Marina_Lydilia= {
     minZoom:5.0,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_Marina_Lydilia||"",
+    CI:pointInfo.Point_Marina_Lydilia,
 }
 Point_Marina_Lydilia.pointContent(Point_Marina_Lydilia);
 
@@ -3754,7 +3755,7 @@ var Point_AreaLeadersOfChongnin= {
     minZoom:5.4,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_AreaLeadersOfChongnin||"",
+    CI:pointInfo.Point_AreaLeadersOfChongnin,
 }
 Point_AreaLeadersOfChongnin.pointContent(Point_AreaLeadersOfChongnin);
 
@@ -3795,7 +3796,7 @@ var Point_ONDE_Ent_Bellesh= {
     minZoom:6.4,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_ONDE_Ent_Bellesh||""
+    CI:pointInfo.Point_ONDE_Ent_Bellesh
 }
 Point_ONDE_Ent_Bellesh.pointContent(Point_ONDE_Ent_Bellesh);
 
@@ -3887,7 +3888,7 @@ var Point_ChinSwee_Temple= {
     minZoom:4.6,
     pointContent: PointContent,
     pointSize:4,
-    CI:pointInfo.Point_ChinSwee_Temple||""
+    CI:pointInfo.Point_ChinSwee_Temple
 }
 Point_ChinSwee_Temple.pointContent(Point_ChinSwee_Temple);
 
