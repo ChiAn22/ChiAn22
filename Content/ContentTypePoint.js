@@ -23,7 +23,9 @@ function PointContent(a){
     });
 
 
-    map.addLayer(vectorLayer);
+    if(window.location.href.includes('index.html')||window.location.href.includes('chian22')){
+        map.addLayer(vectorLayer);
+    }
     function createLabelStyle(){
         return new ol.style.Style({
             text: new ol.style.Text({
@@ -71,6 +73,20 @@ var Point_ChisanIRC= {
     pointContent: PointContent,
 }
 Point_ChisanIRC.pointContent(Point_ChisanIRC);
+
+var Point_PIO= {
+    title:'PIOchan\'s home',
+    fontSize:'10px',
+    fontWeight:'bold',
+    contentColor:'#e2992b',
+    outlineColor:'#ffffff',
+    location:[278.4,265.4],
+    minZoom:5.6,
+    pointSize:4,
+    pointContent: PointContent,
+    CI:pointInfo.Point_PIO
+}
+Point_PIO.pointContent(Point_PIO);
 
 var Point_Chisantin= {
     title:'意景',
